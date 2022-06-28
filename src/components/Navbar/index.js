@@ -6,6 +6,10 @@ const Navbar = () => {
     return (
         <>
             <Nav>
+                <div class="lny-logo" >
+                    <a class="navbar-brand" href="/"
+                    ><img src={process.env.PUBLIC_URL + "/images/LNYoptometry.jpg"} alt="lny - logo - img" width="100"
+                        /></a></div>
                 <NavMenu>
                     <NavLink to="/" activeStyle>
                         Home
