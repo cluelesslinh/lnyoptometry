@@ -25,7 +25,7 @@ text-transform: uppercase;
 letter-spacing: 0.25em;
 font-weight: 500;
 font-size: 11.5px;
-padding: 0 2rem 0 0;
+padding: 1rem 2rem 0 0;
 cursor: pointer;
 &.active {
 	opacity: .4;
