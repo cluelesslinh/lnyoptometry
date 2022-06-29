@@ -1,15 +1,15 @@
 import React from "react";
-import { Nav, NavLink, NavMenu }
+import { Nav, LNYlogo, NavLink, NavMenu }
     from "./NavbarElements";
 
 const Navbar = () => {
     return (
         <>
             <Nav>
-                <div class="lny-logo" >
+                <LNYlogo>
                     <a class="navbar-brand" href="/"
                     ><img src={process.env.PUBLIC_URL + "/images/LNYoptometry.jpg"} alt="lny - logo - img" width="100"
-                        /></a></div>
+                        /></a></LNYlogo>
                 <NavMenu>
                     <NavLink to="/" activeStyle>
                         Home

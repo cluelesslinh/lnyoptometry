@@ -7,11 +7,14 @@ height: 100%;
 width: 100%;
 display: flex;
 justify-content: space-between;
-margin-top: 1.75em;
-margin-bottom: 1.75em;
-margin-left: 5em;
+align-items: center;
+padding: 1.5rem 0 1.5rem 0;
 z-index: 12;
 `;
+
+export const LNYlogo = styled.nav`
+padding: 0 0 0 5rem;
+`
 
 export const NavLink = styled(Link)`
 color: #000000;
@@ -21,9 +24,8 @@ text-decoration: none;
 text-transform: uppercase;
 letter-spacing: 0.25em;
 font-weight: 500;
-font-size: 12.5px;
-padding-bottom: .75rem;
-padding-right: 2rem;
+font-size: 11.5px;
+padding: 0 2rem 0 0;
 cursor: pointer;
 &.active {
 	opacity: .4;
@@ -50,9 +52,8 @@ width: 60%;
 height: 100%;
 justify-content: flex-end;
 flex-wrap: wrap;
-margin-top: 2.5rem;
-margin-right: 9em;
 align-items: center;
+padding: 0 4rem 0 0;
 a:hover {
     opacity: .7;
 }
