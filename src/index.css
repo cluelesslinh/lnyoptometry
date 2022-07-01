@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: 'Commissioner', sans-serif;
+  letter-spacing: .1em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
