@@ -1,4 +1,5 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Routes, Route }
@@ -22,7 +23,7 @@ function App() {
         <Route path='/contact' element={<Contact />} />
         <Route path='/our-doctors' element={<OurDoctors />} />
         <Route path='/gallery' element={<Gallery />} />
-        <Route path='reviews' element={<Reviews />} />
+        <Route path='Reviews' element={<Reviews />} />
       </Routes>
     </Router>
   );

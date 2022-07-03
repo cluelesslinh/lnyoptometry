@@ -1,59 +1,43 @@
-import React from "react";
-import { NavLink } from "./navbarElements";
-import "./navbar.css";
+import React from 'react';
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
+import Container from 'react-bootstrap/Container';
+import Offcanvas from 'react-bootstrap/Offcanvas';
+import { NavBrand, NavLink } from './NavbarElements';
+import './navbar.css';
 
-const Navbar = () => {
+const LNYnavbar = () => {
     return (
         <>
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="/"><img src={process.env.PUBLIC_URL + "/images/LNYoptometry.jpg"} alt="lny - logo - img" width="100"
-                /></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <NavLink class="nav-link" to="/" activeStyle>
-                                HOME
-                            </NavLink>
-                        </li>
-                        <li class="nav-item">
-                            <NavLink class="nav-link" to="/services" activeStyle>
-                                SERVICES
-                            </NavLink>
-                        </li>
-                        <li class="nav-item">
-                            <NavLink class="nav-link" to="/payment-options" activeStyle>
-                                PAYMENT OPTIONS
-                            </NavLink>
-                        </li>
-                        <li class="nav-item">
-                            <NavLink class="nav-link" to="/contact" activeStyle>
-                                CONTACT
-                            </NavLink>
-                        </li>
-                        <li class="nav-item">
-                            <NavLink class="nav-link" to="/our-doctors" activeStyle>
-                                OUR DOCTORS
-                            </NavLink>
-                        </li>
-                        <li class="nav-item">
-                            <NavLink class="nav-link" to="/gallery" activeStyle>
-                                GALLERY
-                            </NavLink>
-                        </li>
-                        <li class="nav-item">
-                            <NavLink class="nav-link" to="/reviews" activeStyle>
-                                REVIEWS
-                            </NavLink>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-
+            {[false].map((expand) => (
+                <Navbar key={expand} expand="md" className="mb-3md">
+                    <Container fluid>
+                        <NavBrand><Navbar.Brand href="/"><img src={process.env.PUBLIC_URL + "/images/LNYoptometry.jpg"} alt="lny - logo - img" width="100"
+                        /></Navbar.Brand></NavBrand>
+                        <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
+                        <Navbar.Offcanvas
+                            id={`offcanvasNavbar-expand-${expand}`}
+                            aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
+                            placement="end"
+                        >
+                            <Offcanvas.Body>
+                                <Nav className="justify-content-end flex-grow-1 pe-3 nav-item">
+                                    <NavLink reloadDocument to="/">HOME</NavLink>
+                                    <NavLink reloadDocument to="/services">SERVICES</NavLink>
+                                    <NavLink reloadDocument to="/payment-options">PAYMENT OPTIONS</NavLink>
+                                    <NavLink reloadDocument to="/contact">CONTACT</NavLink>
+                                    <NavLink reloadDocument to="/our-doctors">OUR DOCTORS</NavLink>
+                                    <NavLink reloadDocument to="/gallery">GALLERY</NavLink>
+                                    <NavLink reloadDocument to="/reviews">REVIEWS</NavLink>
+                                </Nav>
+                            </Offcanvas.Body>
+                        </Navbar.Offcanvas>
+                    </Container>
+                </Navbar>
+            ))
+            }
         </>
     );
 };
 
-export default Navbar;
+export default LNYnavbar;

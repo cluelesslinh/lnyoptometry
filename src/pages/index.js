@@ -46,7 +46,6 @@ const Home = () => {
                     /></MSsub>
                 </Row>
             </MissionStatement>
-
         </div >
     );
 };
