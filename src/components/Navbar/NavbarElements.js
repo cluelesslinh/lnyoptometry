@@ -1,9 +1,6 @@
 import { NavLink as Link } from "react-router-dom";
 import styled from "styled-components";
 
-export const NavBrand = styled.nav`
-margin: 0;
-`
 export const NavLink = styled(Link)`
 color: black;
 list-style: none;

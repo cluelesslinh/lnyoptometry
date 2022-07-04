@@ -3,17 +3,17 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-import { NavBrand, NavLink } from './NavbarElements';
+import { NavLink } from './NavbarElements';
 import './navbar.css';
 
 const LNYnavbar = () => {
     return (
         <>
             {[false].map((expand) => (
-                <Navbar key={expand} expand="md" className="mb-3md">
+                <Navbar key={expand} expand="md" className="navbar mb-3md">
                     <Container fluid>
-                        <NavBrand><Navbar.Brand href="/"><img src={process.env.PUBLIC_URL + "/images/LNYoptometry.jpg"} alt="lny - logo - img" width="100"
-                        /></Navbar.Brand></NavBrand>
+                        <Navbar.Brand className="navbar-brand" href="/"><img src={process.env.PUBLIC_URL + "/images/LNYoptometry.jpg"} alt="lny - logo - img" width="100"
+                        /></Navbar.Brand>
                         <Navbar.Toggle className="custom-toggler fa fa-bars fa-lg text-dark" aria-controls={`offcanvasNavbar-expand-${expand}`} />
                         <Navbar.Offcanvas
                             id={`offcanvasNavbar-expand-${expand}`}
