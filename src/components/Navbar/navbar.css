@@ -4,6 +4,37 @@
     opacity: .7;
 }
 
-.nav-item {
-    align-items: center;
+.fa {
+    transform: scale(1.35, 1);
+}
+
+.custom-toggler,
+.navbar-toggler-icon,
+.custom-toggler:focus,
+.custom-toggler:active,
+.custom-toggler-icon:focus {
+    background-image: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    width: 0;
+    height: auto;
+    font-size: 1em;
+}
+
+.offcanvas {
+    width: 80%;
+}
+
+@media screen and (max-width: 768px) {
+
+    hr {
+        width: 100%;
+        opacity: .075;
+    }
+
+    .nav-item {
+        align-items: center;
+    }
+
 }

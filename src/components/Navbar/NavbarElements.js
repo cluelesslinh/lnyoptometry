@@ -4,7 +4,6 @@ import styled from "styled-components";
 export const NavBrand = styled.nav`
 margin: 0;
 `
-
 export const NavLink = styled(Link)`
 color: black;
 list-style: none;
@@ -19,5 +18,8 @@ cursor: pointer;
 };
 &.active {
 	opacity: .4;
+};
+@media screen and (max-width: 768px) {
+	padding: .7em 0 .7em 0;
 }
 `;
