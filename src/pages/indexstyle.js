@@ -1,14 +1,5 @@
 import styled from 'styled-components';
 
-export const HomeTop = styled.div`
-background-image: url(${process.env.PUBLIC_URL + '/images/home-top.jpg'});
-display: flex;
-flex-direction: column;
-height: 700px;
-width: 100%;
-box-sizing: border-box;
-`;
-
 export const TopTitleBox = styled.div`
 background-color: white;
 height: 10%;

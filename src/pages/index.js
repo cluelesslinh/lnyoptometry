@@ -1,13 +1,17 @@
 import React from 'react';
+import { Parallax, Background } from 'react-parallax';
+import "./indexstyle.css";
 import {
-    HomeTop, TopTitleBox, TopTitle, TopDescriptionBox, TopDescription, MissionStatement,
+    TopTitleBox, TopTitle, TopDescriptionBox, TopDescription, MissionStatement,
     MSmain, MSdescriptionBOX, MStitle, MSdescription, MSsub, Row
 } from "./indexstyle";
 
 const Home = () => {
     return (
         <div>
-            <HomeTop>
+            <Parallax className="home-top-bg" strength={650}>
+                <Background>
+                    <img className="home-topimg" src={process.env.PUBLIC_URL + "/images/home-top.jpg"} alt="main-entrance" /></Background>
                 <TopTitleBox>
                     <TopTitle>LNY OPTOMETRY</TopTitle>
                 </TopTitleBox>
@@ -17,7 +21,7 @@ const Home = () => {
                     <TopDescription>(858) 274-3777</TopDescription>
                     <TopDescription>Office hours: by appointment only due to COVID-19</TopDescription>
                 </TopDescriptionBox>
-            </HomeTop>
+            </Parallax>
             <MissionStatement>
                 <Row>
                     <MSmain><img class="img-fluid"

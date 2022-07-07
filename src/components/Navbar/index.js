@@ -12,7 +12,7 @@ const LNYnavbar = () => {
             {[false].map((expand) => (
                 <Navbar key={expand} expand="md" className="navbar mb-3md">
                     <Container fluid>
-                        <Navbar.Brand className="navbar-brand" href="/"><img src={process.env.PUBLIC_URL + "/images/LNYoptometry.jpg"} alt="lny - logo - img" width="100"
+                        <Navbar.Brand className="navbar-brand" href="/"><img src={process.env.PUBLIC_URL + "/images/LNYoptometry.jpg"} alt="lny-logo" width="100"
                         /></Navbar.Brand>
                         <Navbar.Toggle className="custom-toggler fa fa-bars fa-lg text-dark" aria-controls={`offcanvasNavbar-expand-${expand}`} />
                         <Navbar.Offcanvas

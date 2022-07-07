@@ -1,0 +1,11 @@
+.home-top-bg {
+    height: 675px;
+    width: 100%;
+    margin: 0;
+}
+
+.home-topimg {
+    height: 1100px;
+    object-fit: cover;
+    object-position: 0 -11.25em;
+}
