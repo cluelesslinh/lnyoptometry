@@ -1,11 +1,36 @@
 .home-top-bg {
-    height: 675px;
+    height: 750px;
     width: 100%;
     margin: 0;
 }
 
 .home-topimg {
-    height: 1100px;
+    height: auto;
     object-fit: cover;
-    object-position: 0 -11.25em;
+    object-position: 0 -8em;
+}
+
+.MSRow {
+    max-width: 1000px;
+    padding-bottom: 1em;
+}
+
+.MSmain {
+    padding-right: .8em;
+}
+
+.MSsub {
+    padding-right: .8em;
+}
+
+@media screen and (max-width: 768px) {
+
+    .MSmain {
+        width: 90%;
+    }
+
+    .MSsub {
+        width: 90%;
+    }
+
 }

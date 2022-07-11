@@ -1,15 +1,15 @@
 import React from 'react';
 import { Parallax, Background } from 'react-parallax';
+import { MDBRow, MDBCol } from 'mdb-react-ui-kit';
 import "./indexstyle.css";
 import {
-    TopTitleBox, TopTitle, TopDescriptionBox, TopDescription, MissionStatement,
-    MSmain, MSdescriptionBOX, MStitle, MSdescription, MSsub, Row
+    TopTitleBox, TopTitle, TopDescriptionBox, TopDescription, MSContainer, MStitle, MSdescription
 } from "./indexstyle";
 
 const Home = () => {
     return (
         <div>
-            <Parallax className="home-top-bg" strength={650}>
+            <Parallax className="home-top-bg" strength={750}>
                 <Background>
                     <img className="home-topimg" src={process.env.PUBLIC_URL + "/images/home-top.jpg"} alt="main-entrance" /></Background>
                 <TopTitleBox>
@@ -22,12 +22,12 @@ const Home = () => {
                     <TopDescription>Office hours: by appointment only due to COVID-19</TopDescription>
                 </TopDescriptionBox>
             </Parallax>
-            <MissionStatement>
-                <Row>
-                    <MSmain><img class="img-fluid"
+            <MSContainer>
+                <MDBRow className="MSRow">
+                    <MDBCol className="col-12 col-sm-8"><img class="MSmain img-fluid"
                         src={process.env.PUBLIC_URL + "/images/home-ms-main.jpg"} alt="Glasses-Showcase"
-                    /></MSmain>
-                    <MSdescriptionBOX>
+                    /></MDBCol>
+                    <MDBCol className="col-12 col-sm-4">
                         <MSdescription><MStitle>MISSION STATEMENT:</MStitle></MSdescription>
                         <MSdescription>The mission is simple: provide quality eye care with a personal touch and excellent customer
                             service that patients will want to return year after year.
@@ -39,17 +39,17 @@ const Home = () => {
                             products to help you see clearly. Our practice features a large selection of designer frames to fit every
                             style and budget.
                         </MSdescription>
-                    </MSdescriptionBOX>
-                </Row>
-                <Row>
-                    <MSsub><img src={process.env.PUBLIC_URL + "/images/home-ms-1.jpg"} alt="LNYsign"
-                    /></MSsub>
-                    <MSsub><img src={process.env.PUBLIC_URL + "/images/home-ms-2.jpg"} alt="oculars"
-                    /></MSsub>
-                    <MSsub><img src={process.env.PUBLIC_URL + "/images/home-ms-3.jpg"} alt="retina"
-                    /></MSsub>
-                </Row>
-            </MissionStatement>
+                    </MDBCol>
+                </MDBRow>
+                <MDBRow className="MSRow">
+                    <MDBCol className="col-12 col-md-4 col-sm-4"><img class="MSsub img-fluid" src={process.env.PUBLIC_URL + "/images/home-ms-1.jpg"} alt="LNYsign"
+                    /></MDBCol>
+                    <MDBCol className="col-12 col-md-4 col-sm-4"><img class="MSsub img-fluid" src={process.env.PUBLIC_URL + "/images/home-ms-2.jpg"} alt="oculars"
+                    /></MDBCol>
+                    <MDBCol className="col-12 col-md-4 col-sm-4"><img class="MSsub img-fluid" src={process.env.PUBLIC_URL + "/images/home-ms-3.jpg"} alt="retina"
+                    /></MDBCol>
+                </MDBRow>
+            </MSContainer>
         </div >
     );
 };

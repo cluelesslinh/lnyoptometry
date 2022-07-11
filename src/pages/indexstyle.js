@@ -40,34 +40,22 @@ font-size: 17px;
 padding: 0.25rem 0 0.25rem 1rem;
 `;
 
-export const MissionStatement = styled.div`
-width: 100%;
+export const MSContainer = styled.div`
 display: flex;
 justify-content: center;
-align-items: center;
 flex-wrap: wrap;
-gap: 2em;
-`
-export const MSdescriptionBOX = styled.div`
-flex-shrink: 8;
-display: flex;
-flex-direction: column;
-`
+margin: 5em 5% 0 5%;
+@media screen and (max-width: 768px) {
+   margin: 5% 5% 0 5%;
+}
+`;
+
 export const MStitle = styled.div`
-font-size: 14px;
-`
+font-size: 13px;
+`;
+
 export const MSdescription = styled.div`
-padding: 1em 0 0 0;
-`
-export const MSmain = styled.div`
-`
-export const MSsub = styled.div`
-`
-export const Row = styled.div`
-display: flex;
-flex-direction: row;
-`
-export const Column = styled.div`
-display: flex;
-flex-direction: column;
-`
+font-size: 14px;
+padding: 0 0 1em 0;
+`;
+
