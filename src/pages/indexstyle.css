@@ -23,14 +23,54 @@
     padding-right: .8em;
 }
 
+.home-mid-bg {
+    height: 575px;
+    width: auto;
+    margin: 0;
+}
+
+.home-midimg {
+    height: 1100px;
+    object-fit: cover;
+    object-position: 0 -5em;
+}
+
+.WbgRow {
+    max-width: 1000px;
+    padding-bottom: 1em;
+}
+
+.WbgSub {
+    height: 150%;
+    object-fit: cover;
+}
+
 @media screen and (max-width: 768px) {
 
     .MSmain {
-        width: 90%;
+        width: 100%;
+        padding: 1em 0 2em 0;
     }
 
     .MSsub {
-        width: 90%;
+        width: 100%;
+        padding-bottom: 2em;
+    }
+
+    .WbgSub {
+        height: 275px;
+        object-fit: cover;
+        padding-bottom: 2em;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .WbgSub {
+        height: 225px;
+        object-fit: cover;
+        padding-bottom: 2em;
     }
 
 }
