@@ -111,9 +111,26 @@ export const WbgBox = styled.div`
 display: flex;
 justify-content: center;
 flex-wrap: wrap;
-margin: 5em 5% 5% 5%;
+margin: 5em 5% 7em 5%;
 @media screen and (max-width: 768px) {
-   margin: 5% 5% 5% 5%;
+   margin: 5% 5% 1% 5%;
 }
+`;
+
+export const WbgDescBox = styled.div`
+display: flex;
+justify-content: center;
+margin: 0 5% 0 5%;
+padding: 0 0 2em 0;
+@media screen and (max-width: 768px) {
+    margin: 0 5% 0 5%;
+ }
+`;
+
+
+export const WbgDesc = styled.div`
+font-size: 13px;
+letter-spacing: .05em;
+padding: 0 0 1em 0;
 `;
 

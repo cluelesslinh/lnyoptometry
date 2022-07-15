@@ -59,7 +59,7 @@
 
     .WbgSub {
         height: 275px;
-        object-fit: cover;
+        width: 100%;
         padding-bottom: 2em;
     }
 
@@ -69,8 +69,7 @@
 
     .WbgSub {
         height: 225px;
-        object-fit: cover;
-        padding-bottom: 2em;
+        width: 100%;
     }
 
 }
