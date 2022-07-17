@@ -10,7 +10,7 @@ justify-content: center;
 margin: 5rem 0 2rem 5rem;
 flex-wrap: wrap;
 @media screen and (max-width: 768px) {
-    margin: 5% 0 5% 5%;
+    margin: 3% 0 3% 3%;
 }
 `;
 
@@ -32,11 +32,12 @@ margin: 0 0 0 5rem;
 padding: 1em 0 1em 0;
 @media screen and (max-width: 768px) {
     min-width: 425px;
-    margin: 5% 0 5% 5%;
+    margin: 3% 0 3% 3%;
 }
 `;
 
 export const TopDescription = styled.div`
+font-weight: 600;
 font-size: 1em;
 padding: .25rem 0 .25rem 1rem;
 `;
@@ -47,7 +48,7 @@ justify-content: center;
 flex-wrap: wrap;
 margin: 5em 5% 5% 5%;
 @media screen and (max-width: 768px) {
-   margin: 5% 5% 5% 5%;
+   margin: 3% 3% 3% 3%;
 }
 `;
 
@@ -72,7 +73,7 @@ margin: 5rem 0 2rem 5rem;
 flex-wrap: wrap;
 @media screen and (max-width: 768px) {
     min-width: 450px;
-    margin: 5% 0 5% 5%;
+    margin: 3% 0 3% 3%;
 }
 `;
 
@@ -95,11 +96,12 @@ margin: 0 0 0 5rem;
 padding: 1em 0 1em 0;
 @media screen and (max-width: 768px) {
     min-width: 450px;
-    margin: 5% 0 5% 5%;
+    margin: 3% 0 3% 3%;
 }
 `;
 
 export const MidDesc = styled.div`
+font-weight: 600;
 font-size: 1em;
 padding: .25rem 0 .25rem 1rem;
 @media screen and (max-width: 768px) {
@@ -113,7 +115,7 @@ justify-content: center;
 flex-wrap: wrap;
 margin: 5em 5% 7em 5%;
 @media screen and (max-width: 768px) {
-   margin: 5% 5% 1% 5%;
+   margin: 3% 3% 1% 3%;
 }
 `;
 
@@ -127,10 +129,87 @@ padding: 0 0 2em 0;
  }
 `;
 
-
 export const WbgDesc = styled.div`
 font-size: 13px;
 letter-spacing: .05em;
 padding: 0 0 1em 0;
 `;
 
+export const BotTitleBox = styled.div`
+background-color: white;
+height: 10%;
+width: 50%;
+max-width: 850px;
+display: flex;
+align-items: center;
+margin: 5rem 0 2rem 5rem;
+flex-wrap: wrap;
+min-width: 450px;
+@media screen and (max-width: 768px) {
+    min-width: 450px;
+    margin: 3% 0 3% 3%;
+}
+`;
+
+export const BotTitle = styled.div`
+font-size 2.5em;
+letter-spacing: .1em;
+padding: .25em 0 .25em .5em;
+`;
+
+export const BotDescBox = styled.div`
+font-weight: 600;
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+justify-content: center;
+background-color: white;
+width: 60%;
+max-width: 450px;
+min-width: 450px;
+margin: 0 0 0 5rem;
+padding: 1em 0 1em 0;
+@media screen and (max-width: 768px) {
+    min-width: 450px;
+    margin: 3% 0 3% 3%;
+}
+`;
+
+export const BotDesc = styled.div`
+font-size: 1em;
+padding: .25rem 0 .25rem 1rem;
+@media screen and (max-width: 768px) {
+    min-width: 450px;
+}
+`;
+
+export const LocContainer = styled.div`
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+margin: 5em 5% 5% 5%;
+@media screen and (max-width: 1024px) {
+   margin: 3% 3% 3% 3%;
+}
+`;
+
+export const LocTitle = styled.div`
+font-size: 1.75em;
+font-weight: 900;
+letter-spacing: .1em;
+padding: 0 0 .5em 0;
+@media screen and (max-width: 768px) {
+    padding: 3% 0 3% 0;
+`;
+
+export const LocDesc = styled.div`
+width: 90%;
+font-size: 13px;
+line-height: 200%;
+`;
+
+export const OffHours = styled.div`
+font-size: 16px;
+font-weight: 600;
+letter-spacing: .1em;
+`;

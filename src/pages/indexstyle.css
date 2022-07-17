@@ -45,6 +45,35 @@
     object-fit: cover;
 }
 
+.home-bot-bg {
+    height: 575px;
+    width: auto;
+    margin: 0;
+}
+
+.home-botimg {
+    height: 1100px;
+    object-fit: cover;
+    object-position: 0 -5em;
+}
+
+.LocRow {
+    max-width: 1000px;
+    padding-bottom: 1em;
+}
+
+.LocSub {
+    padding: 3% 0 0 0;
+}
+
+.locationCoord {
+    color: black;
+}
+
+.locationCoord:hover {
+    color: black;
+}
+
 @media screen and (max-width: 768px) {
 
     .MSmain {

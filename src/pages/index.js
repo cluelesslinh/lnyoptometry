@@ -4,7 +4,8 @@ import { MDBRow, MDBCol } from 'mdb-react-ui-kit';
 import "./indexstyle.css";
 import {
     TopTitleBox, TopTitle, TopDescriptionBox, TopDescription, MSContainer, MStitle, MSdescription,
-    MidTitleBox, MidTitle, MidDescBox, MidDesc, WbgBox, WbgDescBox, WbgDesc
+    MidTitleBox, MidTitle, MidDescBox, MidDesc, WbgBox, WbgDescBox, WbgDesc, BotTitleBox, BotTitle,
+    BotDescBox, BotDesc, LocContainer, LocTitle, LocDesc, OffHours
 } from "./indexstyle";
 
 const Home = () => {
@@ -137,6 +138,57 @@ const Home = () => {
                     </MDBCol>
                 </MDBRow>
             </WbgDescBox>
+
+            <Parallax className="home-bot-bg" strength={750}>
+                <Background>
+                    <img className="home-botimg" src={process.env.PUBLIC_URL + "/images/home-bottom.jpg"} alt="sidewall" /></Background>
+                <BotTitleBox>
+                    <BotTitle>LOCATION & CONTACT INFO</BotTitle>
+                </BotTitleBox>
+                <BotDescBox>
+                    <BotDesc>1890 Garnet Ave. San Diego, CA 92109</BotDesc>
+                    <BotDesc><a href="https://www.google.com/maps/place/32%C2%B048'06.5%22N+117%C2%B014'09.8%22W/@32.8018039,-117.2535652,14"
+                        className="locationCoord" target="blank">32°48'06.5"N 117°14'09.8"W</a></BotDesc>
+                    <BotDesc>(858) 274-3777</BotDesc>
+                </BotDescBox>
+            </Parallax>
+
+            <LocContainer>
+                <MDBRow className="LocRow">
+                    <MDBCol className="col-12 col-lg-4 col-md-4 col-sm-4">
+                        <LocTitle>LOCATION</LocTitle>
+                        <LocDesc>We are pleased to introduce you to our office. Conveniently located in Pacific Beach,
+                            Pacific Plaza II, at the intersection of Garnet Ave and Lamont Street, across from the
+                            Broken Yolk Restaurant, and just behind Bruegger's Bagels.
+                        </LocDesc>
+                    </MDBCol>
+                    <MDBCol className="col-12 col-lg-4 col-md-4 col-sm-4">
+                        <LocTitle>OFFICE HOURS</LocTitle>
+                        <OffHours>MONDAY 10AM-6PM</OffHours>
+                        <OffHours>TUESDAY 10AM-6PM</OffHours>
+                        <OffHours>WEDNESDAY 10AM-2PM</OffHours>
+                        <OffHours>THURSDAY 10AM-6PM</OffHours>
+                        <OffHours>FRIDAY 10AM-6PM</OffHours>
+                        <OffHours>SATURDAY BY APPOINTMENT</OffHours>
+                    </MDBCol>
+                    <MDBCol className="col-12 col-lg-4 col-md-4 col-sm-4">
+                        <LocTitle>CONTACT INFO</LocTitle>
+                        <LocDesc>DR. YOSUKE YONEMASU, OD</LocDesc>
+                        <LocDesc>DR. KRISTINE PHAM, OD</LocDesc>
+                        <LocDesc>1890 GARNET AVE. SAN DIEGO, CA 92109</LocDesc>
+                        <LocDesc>(858) 274-3777</LocDesc>
+                        <LocDesc>LNYoptometry@gmail.com</LocDesc>
+                        <locDesc><a href="https://www.google.com/maps/place/32%C2%B048'06.5%22N+117%C2%B014'09.8%22W/@32.8018039,-117.2535652,14"
+                            className="locationCoord" target="blank">32°48'06.5"N 117°14'09.8"W</a></locDesc>
+                    </MDBCol>
+                </MDBRow>
+                <MDBRow className="LocRow">
+                    <MDBCol className="col-12 col-md-6 col-sm-6"><img class="LocSub img-fluid" src={process.env.PUBLIC_URL + "/images/home-location-1.jpg"} alt="front-office"
+                    /></MDBCol>
+                    <MDBCol className="col-12 col-md-6 col-sm-6"><img class="LocSub img-fluid" src={process.env.PUBLIC_URL + "/images/home-location-2.jpg"} alt="guest-table"
+                    /></MDBCol>
+                </MDBRow>
+            </LocContainer>
 
         </div >
     );
