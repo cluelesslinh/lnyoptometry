@@ -1,0 +1,52 @@
+.footerLNY {
+    background-color: #191818;
+}
+
+.footerContainer {
+    padding: 5em 0 5em 0;
+}
+
+.footerDescCol {
+    padding-left: 20%;
+}
+
+.footerLinkCol {}
+
+.footerLink {
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+li {
+    font-size: 10px;
+    padding: .3em 0 0 0;
+}
+
+ul li:hover a {
+    color: white;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .footerContainer {
+        padding: 5% 0 0 0;
+    }
+
+    .footerDescCol {
+        padding-left: 15%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .footerDescCol {
+        padding: 3% 0 2em 7.5%;
+    }
+
+    .footerLinkCol {
+        padding: 3% 0 5% 10%;
+    }
+
+}

@@ -39,6 +39,7 @@ padding: 1em 0 1em 0;
 export const TopDescription = styled.div`
 font-weight: 600;
 font-size: 1em;
+letter-spacing: .075em;
 padding: .25rem 0 .25rem 1rem;
 `;
 
@@ -123,9 +124,10 @@ export const WbgDescBox = styled.div`
 display: flex;
 justify-content: center;
 margin: 0 5% 0 5%;
-padding: 0 0 2em 0;
+padding: 0 0 5em 0;
 @media screen and (max-width: 768px) {
     margin: 0 5% 0 5%;
+    padding: 0 0 3% 0;
  }
 `;
 
@@ -139,7 +141,7 @@ export const BotTitleBox = styled.div`
 background-color: white;
 height: 10%;
 width: 50%;
-max-width: 850px;
+max-width: 700px;
 display: flex;
 align-items: center;
 margin: 5rem 0 2rem 5rem;
@@ -165,8 +167,8 @@ flex-wrap: nowrap;
 justify-content: center;
 background-color: white;
 width: 60%;
-max-width: 450px;
-min-width: 450px;
+max-width: 350px;
+min-width: 350px;
 margin: 0 0 0 5rem;
 padding: 1em 0 1em 0;
 @media screen and (max-width: 768px) {
@@ -177,6 +179,7 @@ padding: 1em 0 1em 0;
 
 export const BotDesc = styled.div`
 font-size: 1em;
+letter-spacing: .075em;
 padding: .25rem 0 .25rem 1rem;
 @media screen and (max-width: 768px) {
     min-width: 450px;
