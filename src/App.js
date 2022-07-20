@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import ScrollButton from './components/ScrollButton';
 import { BrowserRouter as Router, Routes, Route }
   from 'react-router-dom';
 import Home from './pages';
@@ -26,6 +27,7 @@ function App() {
         <Route path='/gallery' element={<Gallery />} />
         <Route path='Reviews' element={<Reviews />} />
       </Routes>
+      <ScrollButton />
       <Footer />
     </Router>
   );
