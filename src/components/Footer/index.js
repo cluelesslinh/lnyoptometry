@@ -37,43 +37,37 @@ const LNYfooter = () => {
                                 </a>
                             </li>
                             <li>
-                                <a href='#!'
+                                <a href='https://www.nvisioncenters.com/'
                                     className="footerLink" target="blank">
                                     Nvision LASIK Center
                                 </a>
                             </li>
                             <li>
-                                <a href='#!'
+                                <a href='https://www.eyeglassguide.com/'
                                     className="footerLink" target="blank">
                                     Eye Glasses Guide
                                 </a>
                             </li>
                             <li>
-                                <a href='#!'
+                                <a href='https://www.allaboutvision.com/'
                                     className="footerLink" target="blank">
                                     All About Vision
                                 </a>
                             </li>
                             <li>
-                                <a href='#!'
-                                    className="footerLink" target="blank">
-                                    Link 4
-                                </a>
-                            </li>
-                            <li>
-                                <a href='#!'
+                                <a href='https://www.allaboutvision.com/contacts/contact-lens-rx.htm'
                                     className="footerLink" target="blank">
                                     Contact Lens FAQs
                                 </a>
                             </li>
                             <li>
-                                <a href='#!'
+                                <a href='https://www.youtube.com/watch?v=rKnHWfw4Azo'
                                     className="footerLink" target="blank">
                                     Contact Lens Insertion & Removal Instruction
                                 </a>
                             </li>
                             <li>
-                                <a href='#!'
+                                <a href='https://www.dropbox.com/sh/7ipguo7wxve5ymg/AAAt9McEsGv_si_kotIDRmAva?dl=0'
                                     className="footerLink" target="blank">
                                     Privacy Practices
                                 </a>

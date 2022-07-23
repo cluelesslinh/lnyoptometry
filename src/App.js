@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
+import './index.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ScrollButton from './components/ScrollButton';

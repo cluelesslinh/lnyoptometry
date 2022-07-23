@@ -1,3 +1,92 @@
+aside {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+}
+
+.subRight li.whiteText a {
+    color: white !important;
+}
+
+.subRight li.blackText a {
+    color: black;
+}
+
+.subRight li.whiteDot a {
+    background-color: white !important;
+    outline: .2em solid white !important;
+}
+
+.subRight li.blackDot a {
+    background-color: black;
+    outline: .2em solid black;
+}
+
+aside ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+}
+
+.dot {
+    cursor: pointer;
+    margin-top: 1rem;
+    display: block;
+    height: .75em;
+    width: .75em;
+    border-radius: 50%;
+}
+
+.LNYside {
+    text-decoration: none;
+    position: absolute;
+    top: 17%;
+    right: 0;
+    width: 500px;
+    text-align: right;
+    font-size: 1.25em;
+    font-weight: 600;
+    letter-spacing: .25em;
+    margin-right: 50%;
+}
+
+.WBGside {
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 500px;
+    text-align: right;
+    font-size: 1.25em;
+    font-weight: 600;
+    letter-spacing: .25em;
+    margin-right: 50%;
+}
+
+.LOCside {
+    text-decoration: none;
+    position: absolute;
+    top: 84%;
+    right: 0;
+    width: 500px;
+    text-align: right;
+    font-size: 1.25em;
+    font-weight: 600;
+    letter-spacing: .25em;
+    margin-right: 50%;
+}
+
+aside ul li:hover span {
+    display: block;
+}
+
+aside ul li .active {
+    background-color: transparent !important;
+}
+
 .home-top-bg {
     height: 750px;
 }
@@ -70,6 +159,14 @@
 
 .locationCoord:hover {
     color: black;
+}
+
+@media screen and (max-width: 1024px) {
+
+    aside {
+        visibility: hidden;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
