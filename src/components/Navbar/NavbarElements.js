@@ -17,6 +17,6 @@ cursor: pointer;
 	opacity: .4;
 };
 @media screen and (max-width: 768px) {
-	padding: .7em 0 .7em 0;
+	margin: .7em 0 .7em 0;
 }
 `;

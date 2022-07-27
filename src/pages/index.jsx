@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 import $ from 'jquery';
 import { Parallax, Background } from 'react-parallax';
-import { MDBRow, MDBCol } from 'mdb-react-ui-kit';
+import { MDBRow, MDBCol, } from 'mdb-react-ui-kit';
 import "./indexstyle.css";
 import "./sidenavindex.js";
 import {
@@ -14,26 +15,36 @@ const Home = () => {
 
     $(window).scroll(function () {
 
-        /* get current scroll-position within window */
         var scroll = $(window).scrollTop();
 
-        $('.subRight li').each(function () {
-
-            /* get position of navigation-element (distance from top minus half of it's height, 
-            so that it changes color while it's half over black and half over white background) */
+        $('.dot').each(function () {
             var elementPositionTop = parseFloat($(this).offset().top) + (parseFloat($(this).height() / 2));
 
-            /* change color for each background-change */
-            if (elementPositionTop >= 100 && elementPositionTop <= 875 || elementPositionTop >= 1700 &&
-                elementPositionTop <= 2250 || elementPositionTop >= 3185 && elementPositionTop <= 3765
-                || elementPositionTop >= 4500) {
+            if (elementPositionTop >= 0 && elementPositionTop <= 915 || elementPositionTop >= 1725 &&
+                elementPositionTop <= 2300 || elementPositionTop >= 3220 && elementPositionTop <= 3800
+                || elementPositionTop >= 4540) {
+                $(this).addClass('whiteDot');
+            } else {
+                $(this).removeClass('whiteDot');
+            }
+        });
+    });
+
+    $(window).scroll(function () {
+
+        var scroll = $(window).scrollTop();
+
+        $('.dropItem').each(function () {
+            var elementPositionTop = parseFloat($(this).offset().top) + (parseFloat($(this).height() / 2));
+
+            if (elementPositionTop >= 0 && elementPositionTop <= 900 || elementPositionTop >= 1710 &&
+                elementPositionTop <= 2285 || elementPositionTop >= 3205 && elementPositionTop <= 3785
+                || elementPositionTop >= 4525) {
                 $(this).addClass('whiteText') &&
-                    $(this).addClass('whiteDot');
+                    $(this).removeClass('blackText');
             } else {
                 $(this).removeClass('whiteText') &&
-                    $(this).removeClass('whiteDot') &&
-                    $(this).addClass('blackText') &&
-                    $(this).addClass('blackDot');
+                    $(this).addClass('blackText');
             }
         });
     });
@@ -58,6 +69,7 @@ const Home = () => {
                 </Parallax>
 
                 <MSContainer>
+
                     <MDBRow className="MSRow">
                         <MDBCol className="col-12 col-sm-8"><img class="MSmain img-fluid"
                             src={process.env.PUBLIC_URL + "/images/home-ms-main.jpg"} alt="Glasses-Showcase"
@@ -228,21 +240,34 @@ const Home = () => {
             </section>
 
             <aside>
-                <ul class="subRight">
+                <ul className="dropDownLNY">
                     <li>
-                        < a class="dot" href="#LNYoptometry" />
-                        <a href="#LNYoptometry"><span class="LNYside">LNY OPTOMETRY</span></a>
-                    </li>
-                    <li>
-                        < a class="dot" href="#WhyBuyGlasses" />
-                        <a href="#WhyBuyGlasses"><span class="WBGside">WHY BUY GLASSES FROM YOUR OPTOMETRIST?</span></a>
-                    </li>
-                    <li>
-                        < a class="dot" href="#LocationContact" />
-                        <a href="#LocationContact"><span class="LOCside">LOCATION & CONNTACT INFO</span></a>
+                        <a className="dropItem" href="#LNYoptometry">
+                            <span class="LNYside">LNY OPTOMETRY</span>
+                        </a>
+                        <Link activeClass="active" className="dot" spy to="LNYoptometry">
+                        </Link>
                     </li>
                 </ul>
-            </aside>
+                <ul className="dropDownWBG">
+                    <li>
+                        <a className="dropItem" href="#WhyBuyGlasses">
+                            <span className="WBGside">WHY BUY GLASSES FROM YOUR OPTOMETRIST?</span>
+                        </a>
+                        <Link activeClass="active" className="dot" spy to="WhyBuyGlasses">
+                        </Link>
+                    </li>
+                </ul>
+                <ul className="dropDownLOC">
+                    <li>
+                        <a className="dropItem" href="#LocationContact">
+                            <span className="LOCside">LOCATION & CONNTACT INFO</span>
+                        </a>
+                        <Link activeClass="active" className="dot" spy to="LocationContact">
+                        </Link>
+                    </li>
+                </ul>
+            </aside >
 
         </div >
     );

@@ -47,7 +47,7 @@ export const MSContainer = styled.div`
 display: flex;
 justify-content: center;
 flex-wrap: wrap;
-margin: 5em 5% 5% 5%;
+margin: 5em 5% 0 5%;
 @media screen and (max-width: 768px) {
    margin: 3% 3% 3% 3%;
 }
@@ -124,7 +124,6 @@ export const WbgDescBox = styled.div`
 display: flex;
 justify-content: center;
 margin: 0 5% 0 5%;
-padding: 0 0 5em 0;
 @media screen and (max-width: 768px) {
     margin: 0 5% 0 5%;
     padding: 0 0 3% 0;

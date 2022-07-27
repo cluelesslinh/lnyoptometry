@@ -1,26 +1,32 @@
 aside {
     position: fixed;
+    display: inline-block;
     top: 50%;
     right: 0;
     transform: translate(-50%, -50%);
 }
 
-.subRight li.whiteText a {
-    color: white !important;
+.dot.whiteDot {
+    background-color: white;
+    outline: .2em solid white;
 }
 
-.subRight li.blackText a {
+.dropItem.whiteText,
+.dropItem:hover.whiteText {
+    color: white;
+}
+
+.dropItem.blackText,
+.dropItem:hover.blackText {
     color: black;
 }
 
-.subRight li.whiteDot a {
-    background-color: white !important;
-    outline: .2em solid white !important;
-}
-
-.subRight li.blackDot a {
-    background-color: black;
-    outline: .2em solid black;
+.dropItem,
+.dropItem:hover,
+.dropItem:focus,
+.dropItem:active {
+    text-decoration: none;
+    color: inherit;
 }
 
 aside ul {
@@ -28,22 +34,27 @@ aside ul {
     flex-direction: column;
     align-items: center;
     list-style-type: none;
+    cursor: pointer;
     margin: 0;
+    z-index: 1;
 }
 
 .dot {
     cursor: pointer;
-    margin-top: 1rem;
+    margin: .75rem .2rem .75rem 0;
     display: block;
-    height: .75em;
-    width: .75em;
+    height: .7em;
+    width: .7em;
     border-radius: 50%;
+    color: initial;
+    outline: 2px solid black;
+    background-color: black;
 }
 
 .LNYside {
     text-decoration: none;
     position: absolute;
-    top: 17%;
+    top: 9px;
     right: 0;
     width: 500px;
     text-align: right;
@@ -51,12 +62,13 @@ aside ul {
     font-weight: 600;
     letter-spacing: .25em;
     margin-right: 50%;
+    display: none;
 }
 
 .WBGside {
     text-decoration: none;
     position: absolute;
-    top: 50%;
+    top: 43px;
     right: 0;
     width: 500px;
     text-align: right;
@@ -64,12 +76,13 @@ aside ul {
     font-weight: 600;
     letter-spacing: .25em;
     margin-right: 50%;
+    display: none;
 }
 
 .LOCside {
     text-decoration: none;
     position: absolute;
-    top: 84%;
+    top: 77px;
     right: 0;
     width: 500px;
     text-align: right;
@@ -77,14 +90,30 @@ aside ul {
     font-weight: 600;
     letter-spacing: .25em;
     margin-right: 50%;
+    display: none;
 }
 
-aside ul li:hover span {
-    display: block;
-}
-
-aside ul li .active {
+.active {
     background-color: transparent !important;
+}
+
+.dropDownLNY:hover .LNYside {
+    display: block;
+    z-index: 1;
+}
+
+.dropDownWBG:hover .WBGside {
+    display: block;
+    z-index: 1;
+}
+
+.dropDownLOC:hover .LOCside {
+    display: block;
+    z-index: 1;
+}
+
+#LNYoptometry {
+    padding-top: 2em;
 }
 
 .home-top-bg {
@@ -108,6 +137,10 @@ aside ul li .active {
 
 .MSsub {
     padding-right: .8em;
+}
+
+#WhyBuyGlasses {
+    padding-top: 5em;
 }
 
 .home-mid-bg {
@@ -142,6 +175,10 @@ aside ul li .active {
     height: 1100px;
     object-fit: cover;
     object-position: 0 -5em;
+}
+
+#LocationContact {
+    padding-top: 5em;
 }
 
 .LocRow {
@@ -181,10 +218,18 @@ aside ul li .active {
         padding-bottom: 2em;
     }
 
+    #WhyBuyGlasses {
+        padding-top: 3%;
+    }
+
     .WbgSub {
         height: 275px;
         width: 100%;
         padding-bottom: 2em;
+    }
+
+    #LocationContact {
+        padding-top: 3%;
     }
 
 }
