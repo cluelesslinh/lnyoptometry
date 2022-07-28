@@ -239,11 +239,11 @@ const Home = () => {
                 </LocContainer>
             </section>
 
-            <aside>
+            <div class='sideNav'>
                 <ul className="dropDownLNY">
                     <li>
                         <a className="dropItem" href="#LNYoptometry">
-                            <span class="LNYside">LNY OPTOMETRY</span>
+                            <span className='hidden sideLNY'>LNY OPTOMETRY</span>
                         </a>
                         <Link activeClass="active" className="dot" spy to="LNYoptometry">
                         </Link>
@@ -252,7 +252,7 @@ const Home = () => {
                 <ul className="dropDownWBG">
                     <li>
                         <a className="dropItem" href="#WhyBuyGlasses">
-                            <span className="WBGside">WHY BUY GLASSES FROM YOUR OPTOMETRIST?</span>
+                            <span className="hidden sideWBG">WHY BUY GLASSES FROM YOUR OPTOMETRIST?</span>
                         </a>
                         <Link activeClass="active" className="dot" spy to="WhyBuyGlasses">
                         </Link>
@@ -261,13 +261,13 @@ const Home = () => {
                 <ul className="dropDownLOC">
                     <li>
                         <a className="dropItem" href="#LocationContact">
-                            <span className="LOCside">LOCATION & CONNTACT INFO</span>
+                            <span className="hidden sideLOC">LOCATION & CONNTACT INFO</span>
                         </a>
                         <Link activeClass="active" className="dot" spy to="LocationContact">
                         </Link>
                     </li>
                 </ul>
-            </aside >
+            </div>
 
         </div >
     );
