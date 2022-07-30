@@ -49,6 +49,33 @@ const Home = () => {
         });
     });
 
+    $('img[data-enlargeable]').addClass('img-enlargeable').click(function () {
+        var src = $(this).attr('src');
+        var modal;
+
+        function removeModal() {
+            modal.remove();
+            $('body').off('keyup.modal-close');
+        }
+        modal = $('<div>').css({
+            background: 'RGBA(0,0,0,0) url(' + src + ') no-repeat center',
+            position: 'fixed',
+            width: '100%',
+            height: '100%',
+            zIndex: '10000',
+            top: '0',
+            left: '0',
+        }).click(function () {
+            removeModal();
+        }).appendTo('body');
+
+        $('body').on('keyup.modal-close', function (e) {
+            if (e.key === 'Escape') {
+                removeModal();
+            }
+        });
+    });
+
     return (
 
         <div>
@@ -71,9 +98,12 @@ const Home = () => {
                 <MSContainer>
 
                     <MDBRow className="MSRow">
-                        <MDBCol className="col-12 col-sm-8"><img class="MSmain img-fluid"
-                            src={process.env.PUBLIC_URL + "/images/home-ms-main.jpg"} alt="Glasses-Showcase"
-                        /></MDBCol>
+                        <MDBCol className="col-12 col-sm-8">
+                            <div className="clickEnlarge MSmain">
+                                <img data-toggle="modal" data-target="#mainMS" className="img-fluid" src={process.env.PUBLIC_URL + "/images/home-ms-main.jpg"} alt="Glasses-Showcase"
+                                />
+                            </div>
+                        </MDBCol>
                         <MDBCol className="MSdescBox col-12 col-sm-4">
                             <MSdescription><MStitle>MISSION STATEMENT:</MStitle></MSdescription>
                             <MSdescription>The mission is simple: provide quality eye care with a personal touch and excellent customer
@@ -89,12 +119,21 @@ const Home = () => {
                         </MDBCol>
                     </MDBRow>
                     <MDBRow className="MSRow">
-                        <MDBCol className="col-12 col-md-4 col-sm-4"><img class="MSsub img-fluid" src={process.env.PUBLIC_URL + "/images/home-ms-1.jpg"} alt="LNYsign"
-                        /></MDBCol>
-                        <MDBCol className="col-12 col-md-4 col-sm-4"><img class="MSsub img-fluid" src={process.env.PUBLIC_URL + "/images/home-ms-2.jpg"} alt="oculars"
-                        /></MDBCol>
-                        <MDBCol className="col-12 col-md-4 col-sm-4"><img class="MSsub img-fluid" src={process.env.PUBLIC_URL + "/images/home-ms-3.jpg"} alt="retina"
-                        /></MDBCol>
+                        <MDBCol className="col-12 col-md-4 col-sm-4">
+                            <div className="clickEnlarge MSsub">
+                                <img data-toggle="modal" data-target="#subMS1" className="img-fluid" src={process.env.PUBLIC_URL + "/images/home-ms-1.jpg"} alt="LNYsign" />
+                            </div>
+                        </MDBCol>
+                        <MDBCol className="col-12 col-md-4 col-sm-4">
+                            <div className="clickEnlarge MSsub">
+                                <img data-toggle="modal" data-target="#subMS2" className="img-fluid" src={process.env.PUBLIC_URL + "/images/home-ms-2.jpg"} alt="oculars" />
+                            </div>
+                        </MDBCol>
+                        <MDBCol className="col-12 col-md-4 col-sm-4">
+                            <div className="clickEnlarge MSsub">
+                                <img data-toggle="modal" data-target="#subMS3" className="img-fluid" src={process.env.PUBLIC_URL + "/images/home-ms-3.jpg"} alt="retina" />
+                            </div>
+                        </MDBCol>
                     </MDBRow>
                 </MSContainer>
             </section>
@@ -113,16 +152,16 @@ const Home = () => {
 
                 <WbgBox>
                     <MDBRow className="WbgRow">
-                        <MDBCol className="col-6 col-lg-3 col-md-3"><img class="WbgSub img-fluid"
+                        <MDBCol className="col-6 col-lg-3 col-md-3"><img className="WbgSub img-fluid"
                             src={process.env.PUBLIC_URL + "/images/home-wbg-1.jpg"} alt="Glasses-Incase"
                         /></MDBCol>
-                        <MDBCol className="col-6 col-lg-3 col-md-3"><img class="WbgSub img-fluid"
+                        <MDBCol className="col-6 col-lg-3 col-md-3"><img className="WbgSub img-fluid"
                             src={process.env.PUBLIC_URL + "/images/home-wbg-2.jpg"} alt="Protractor"
                         /></MDBCol>
-                        <MDBCol className="col-6 col-lg-3 col-md-3"><img class="WbgSub img-fluid"
+                        <MDBCol className="col-6 col-lg-3 col-md-3"><img className="WbgSub img-fluid"
                             src={process.env.PUBLIC_URL + "/images/home-wbg-3.jpg"} alt="Microscope"
                         /></MDBCol>
-                        <MDBCol className="col-6 col-lg-3 col-md-3"><img class="WbgSub img-fluid"
+                        <MDBCol className="col-6 col-lg-3 col-md-3"><img className="WbgSub img-fluid"
                             src={process.env.PUBLIC_URL + "/images/home-wbg-4.jpg"} alt="Toolset"
                         /></MDBCol>
                     </MDBRow>
@@ -231,15 +270,21 @@ const Home = () => {
                         </MDBCol>
                     </MDBRow>
                     <MDBRow className="LocRow">
-                        <MDBCol className="col-12 col-md-6 col-sm-6"><img class="LocSub img-fluid" src={process.env.PUBLIC_URL + "/images/home-location-1.jpg"} alt="front-office"
-                        /></MDBCol>
-                        <MDBCol className="col-12 col-md-6 col-sm-6"><img class="LocSub img-fluid" src={process.env.PUBLIC_URL + "/images/home-location-2.jpg"} alt="guest-table"
-                        /></MDBCol>
+                        <MDBCol className="col-12 col-md-6 col-sm-6">
+                            <div className="clickEnlarge LocSub">
+                                <img data-toggle="modal" data-target="#locSub1" className="img-fluid" src={process.env.PUBLIC_URL + "/images/home-location-1.jpg"} alt="front-office" />
+                            </div>
+                        </MDBCol>
+                        <MDBCol className="col-12 col-md-6 col-sm-6">
+                            <div className="clickEnlarge LocSub">
+                                <img data-toggle="modal" data-target="#locSub2" className="img-fluid" src={process.env.PUBLIC_URL + "/images/home-location-2.jpg"} alt="guest-table" />
+                            </div>
+                        </MDBCol>
                     </MDBRow>
                 </LocContainer>
             </section>
 
-            <div class='sideNav'>
+            <div className='sideNav'>
                 <ul className="dropDownLNY">
                     <li>
                         <a className="dropItem" href="#LNYoptometry">
@@ -267,6 +312,84 @@ const Home = () => {
                         </Link>
                     </li>
                 </ul>
+            </div>
+
+            <div class="modal fade" id="mainMS" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img className="modalImage img-fluid" src={process.env.PUBLIC_URL + "/images/home-ms-main.jpg"} alt="Glasses-Showcase" />
+                        </div>
+                        <div class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="subMS1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img className="modalImage img-fluid" src={process.env.PUBLIC_URL + "/images/home-ms-1.jpg"} alt="LNYsign" />
+                        </div>
+                        <div class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="subMS2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img className="modalImage img-fluid" src={process.env.PUBLIC_URL + "/images/home-ms-2.jpg"} alt="oculars" />
+                        </div>
+                        <div class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="subMS3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img className="modalImage img-fluid" src={process.env.PUBLIC_URL + "/images/home-ms-3.jpg"} alt="retina" />
+                        </div>
+                        <div class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="locSub1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img className="modalImage img-fluid" src={process.env.PUBLIC_URL + "/images/home-ms-2.jpg"} alt="oculars" />
+                        </div>
+                        <div class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="locSub2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img className="modalImage img-fluid" src={process.env.PUBLIC_URL + "/images/home-location-2.jpg"} alt="guest-table" />
+                        </div>
+                        <div class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div >

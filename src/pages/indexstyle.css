@@ -192,6 +192,62 @@ span.sideLOC {
     color: black;
 }
 
+.clickEnlarge {
+    cursor: pointer;
+}
+
+body.modal-open {
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+.modal-backdrop {
+    opacity: .95 !important;
+}
+
+.modal.fade .modal-dialog {
+    -webkit-transition: -webkit-transform .2s ease all;
+    -o-transition: -o-transform .2s ease all;
+    transition: transform .2s ease all;
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+    transition-duration: 2;
+    max-width: 75vw;
+}
+
+.modal-content {
+    background-color: transparent;
+    align-items: center;
+}
+
+.modal-body {
+    padding: 0;
+}
+
+.close {
+    position: fixed;
+    top: 0;
+    right: -5em;
+    cursor: pointer;
+    color: lightgray;
+    text-align: center;
+    border: 1px dotted lightgray;
+    width: .85em;
+    height: .85em;
+    font-size: 2em;
+}
+
+.close span {
+    position: relative;
+    bottom: .475em;
+}
+
+.close:hover {
+    border: 1px dotted transparent !important;
+}
+
 @media screen and (max-width: 1024px) {
 
     aside {
