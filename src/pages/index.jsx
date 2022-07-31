@@ -315,13 +315,13 @@ const Home = () => {
             </div>
 
             <div class="modal fade" id="mainMS" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-dialog modal-dialog-centered modalMS" role="document">
                     <div class="modal-content">
-                        <div class="modal-body">
-                            <img className="modalImage img-fluid" src={process.env.PUBLIC_URL + "/images/home-ms-main.jpg"} alt="Glasses-Showcase" />
-                        </div>
                         <div class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
+                        </div>
+                        <div class="modal-body">
+                            <img className="modalImage img-fluid" src={process.env.PUBLIC_URL + "/images/home-ms-main.jpg"} alt="Glasses-Showcase" />
                         </div>
                     </div>
                 </div>
@@ -330,11 +330,11 @@ const Home = () => {
             <div class="modal fade" id="subMS1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
-                        <div class="modal-body">
-                            <img className="modalImage img-fluid" src={process.env.PUBLIC_URL + "/images/home-ms-1.jpg"} alt="LNYsign" />
-                        </div>
                         <div class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
+                        </div>
+                        <div class="modal-body">
+                            <img className="modalImage img-fluid" src={process.env.PUBLIC_URL + "/images/home-ms-1.jpg"} alt="LNYsign" />
                         </div>
                     </div>
                 </div>
@@ -343,24 +343,24 @@ const Home = () => {
             <div class="modal fade" id="subMS2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
-                        <div class="modal-body">
-                            <img className="modalImage img-fluid" src={process.env.PUBLIC_URL + "/images/home-ms-2.jpg"} alt="oculars" />
-                        </div>
                         <div class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
+                        </div>
+                        <div class="modal-body">
+                            <img className="modalImage img-fluid" src={process.env.PUBLIC_URL + "/images/home-ms-2.jpg"} alt="oculars" />
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="modal fade" id="subMS3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
+                <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
-                        <div class="modal-body">
-                            <img className="modalImage img-fluid" src={process.env.PUBLIC_URL + "/images/home-ms-3.jpg"} alt="retina" />
-                        </div>
                         <div class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
+                        </div>
+                        <div class="modal-body">
+                            <img className="modalImage img-fluid" src={process.env.PUBLIC_URL + "/images/home-ms-3.jpg"} alt="retina" />
                         </div>
                     </div>
                 </div>
@@ -369,11 +369,11 @@ const Home = () => {
             <div class="modal fade" id="locSub1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
-                        <div class="modal-body">
-                            <img className="modalImage img-fluid" src={process.env.PUBLIC_URL + "/images/home-ms-2.jpg"} alt="oculars" />
-                        </div>
                         <div class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
+                        </div>
+                        <div class="modal-body">
+                            <img className="modalImage img-fluid" src={process.env.PUBLIC_URL + "/images/home-location-1.jpg"} alt="oculars" />
                         </div>
                     </div>
                 </div>
@@ -382,11 +382,11 @@ const Home = () => {
             <div class="modal fade" id="locSub2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
-                        <div class="modal-body">
-                            <img className="modalImage img-fluid" src={process.env.PUBLIC_URL + "/images/home-location-2.jpg"} alt="guest-table" />
-                        </div>
                         <div class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
+                        </div>
+                        <div class="modal-body">
+                            <img className="modalImage img-fluid" src={process.env.PUBLIC_URL + "/images/home-location-2.jpg"} alt="guest-table" />
                         </div>
                     </div>
                 </div>
