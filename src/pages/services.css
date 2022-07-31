@@ -1,0 +1,138 @@
+.servicesBG {
+    padding-top: 1em;
+}
+
+.services-bg-box {
+    height: 300px;
+}
+
+.services-bg-img {
+    height: 1100px;
+    object-fit: cover;
+    object-position: 0 -24em;
+}
+
+servicestitlebox {
+    background-color: white;
+    height: 10%;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 0 2rem 5rem;
+    flex-wrap: wrap;
+}
+
+servicestitle {
+    font-size: 2.25em;
+    letter-spacing: .175em;
+}
+
+servicesdescbox {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color: white;
+    width: 60%;
+    max-width: 625px;
+    min-width: 425px;
+    margin: 0 0 0 5rem;
+    padding: 1em 0 1em 0;
+}
+
+servicesdesc {
+    font-weight: 600;
+    font-size: 1em;
+    letter-spacing: .075em;
+    padding: .25rem 0 .25rem 1rem;
+}
+
+.servicesPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicesRow {
+    max-width: 1000px;
+    text-align: center;
+    margin: 6em 5% 0 5%;
+}
+
+.servicesDesc {
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: .05em;
+    padding: 1em 0 1.5em 0;
+}
+
+.businessCardSite {
+    font-size: 18px;
+    padding: 1em 0 .5em 0;
+}
+
+.businessCardNumber {
+    font-size: 20px;
+    font-weight: 600;
+    padding: .25em 0 2em 0;
+}
+
+.imageRow {
+    max-width: 1000px;
+    margin: 3em 5% 7em 5%;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .services-bg-img {
+        height: 875px;
+        object-fit: cover;
+        object-position: -1.5em -15em;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .services-bg-box {
+        height: 25%;
+    }
+
+    .services-bg-img {
+        height: 675px;
+        object-fit: cover;
+        object-position: -1.75em -11em;
+    }
+
+    servicestitlebox {
+        margin: 3% 0 3% 3%;
+    }
+
+    servicesdescbox {
+        margin: 3% 0 3% 3%;
+    }
+
+    .servicesRow {
+        margin: 5% 5% 0 5%;
+    }
+
+    .imageRow {
+        margin: 0 5% 10% 5%;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .services-bg-img {
+        height: 450px;
+        object-fit: cover;
+        object-position: 0 -5em;
+    }
+
+    .imageRow {
+        margin: 0 3% 5% 3%;
+    }
+
+}

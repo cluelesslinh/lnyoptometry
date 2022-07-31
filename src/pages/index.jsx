@@ -4,7 +4,6 @@ import $ from 'jquery';
 import { Parallax, Background } from 'react-parallax';
 import { MDBRow, MDBCol, } from 'mdb-react-ui-kit';
 import "./indexstyle.css";
-import "./sidenavindex.js";
 import {
     TopTitleBox, TopTitle, TopDescriptionBox, TopDescription, MSContainer, MStitle, MSdescription,
     MidTitleBox, MidTitle, MidDescBox, MidDesc, WbgBox, WbgDescBox, WbgDesc, BotTitleBox, BotTitle,
@@ -126,12 +125,12 @@ const Home = () => {
                         </MDBCol>
                         <MDBCol className="col-12 col-md-4 col-sm-4">
                             <div className="clickEnlarge MSsub">
-                                <img data-toggle="modal" data-target="#subMS2" className="img-fluid" src={process.env.PUBLIC_URL + "/images/home-ms-2.jpg"} alt="oculars" />
+                                <img data-toggle="modal" data-target="#subMS2" className="img-fluid" src={process.env.PUBLIC_URL + "/images/auto-refractor.jpg"} alt="oculars" />
                             </div>
                         </MDBCol>
                         <MDBCol className="col-12 col-md-4 col-sm-4">
                             <div className="clickEnlarge MSsub">
-                                <img data-toggle="modal" data-target="#subMS3" className="img-fluid" src={process.env.PUBLIC_URL + "/images/home-ms-3.jpg"} alt="retina" />
+                                <img data-toggle="modal" data-target="#subMS3" className="img-fluid" src={process.env.PUBLIC_URL + "/images/retina.jpg"} alt="retina" />
                             </div>
                         </MDBCol>
                     </MDBRow>
@@ -347,7 +346,7 @@ const Home = () => {
                             <span aria-hidden="true">&times;</span>
                         </div>
                         <div class="modal-body">
-                            <img className="modalImage img-fluid" src={process.env.PUBLIC_URL + "/images/home-ms-2.jpg"} alt="oculars" />
+                            <img className="modalImage img-fluid" src={process.env.PUBLIC_URL + "/images/auto-refractor.jpg"} alt="oculars" />
                         </div>
                     </div>
                 </div>
@@ -360,7 +359,7 @@ const Home = () => {
                             <span aria-hidden="true">&times;</span>
                         </div>
                         <div class="modal-body">
-                            <img className="modalImage img-fluid" src={process.env.PUBLIC_URL + "/images/home-ms-3.jpg"} alt="retina" />
+                            <img className="modalImage img-fluid" src={process.env.PUBLIC_URL + "/images/retina.jpg"} alt="retina" />
                         </div>
                     </div>
                 </div>
