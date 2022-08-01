@@ -35,7 +35,7 @@ const PaymentOptions = () => {
                         <img className="po-img" src={process.env.PUBLIC_URL + "/images/pamphletLNY.jpg"} alt="pamphletLNY" />
                     </MDBCol>
 
-                    <MDBCol className="poDesc col-6">
+                    <MDBCol className="poDesc col-12 col-lg-6 col-md-6 col-sm-6">
                         <div className="podesc">
                             A vision insurance policy is not the same as medical health health insurance. Vision insurance
                             is a wellness benefit designed to provide routine eye care, prescription eye wear and other
@@ -51,7 +51,7 @@ const PaymentOptions = () => {
                         </div>
                     </MDBCol>
 
-                    <MDBCol className="poDesc col-6">
+                    <MDBCol className="poDesc col-12 col-lg-6 col-md-6 col-sm-6">
                         <div className="podesc">
                             Medicare Part B is the only medical plan that we currently accept.
                         </div>
@@ -63,12 +63,12 @@ const PaymentOptions = () => {
 
                         <div className="podesc">
                             Patient Paperwork: click <a href="https://www.dropbox.com/sh/7ipguo7wxve5ymg/AAAt9McEsGv_si_kotIDRmAva?dl=0"
-                                target="blank"><b>HERE</b></a> to download. <br></br>
+                                className="poLink" target="blank"><b>HERE</b></a> to download. <br></br>
                             Call (858) 274-3777 to schedulue your eye exam today. <br></br>
                             LNY optometry <br></br>
                             1890 Garnet Ave. San Diego, CA 92109 <br></br>
                             <a href="https://www.google.com/maps/place/32%C2%B048'06.5%22N+117%C2%B014'09.8%22W/@32.8018039,-117.2535652,14"
-                                className="locationCoord" target="blank"><b>32°48'06.5"N 117°14'09.8"W</b></a>
+                                className="poLink" target="blank"><b>32°48'06.5"N 117°14'09.8"W</b></a>
                         </div>
                     </MDBCol>
 
