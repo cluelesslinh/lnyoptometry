@@ -10,7 +10,7 @@ const Services = () => {
             <section className="servicesBG">
                 <Parallax className="services-bg-box" strength={750}>
                     <Background>
-                        <img className="services-bg-img" src={process.env.PUBLIC_URL + "/images/auto-refractor.jpg"} alt="main-entrance" /></Background>
+                        <img className="services-bg-img" src={process.env.PUBLIC_URL + "/images/auto-refractor.jpg"} alt="auto-refractor" /></Background>
                     <servicestitlebox>
                         <servicestitle>SERVICES</servicestitle>
                     </servicestitlebox>

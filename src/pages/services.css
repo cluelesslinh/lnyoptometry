@@ -14,7 +14,6 @@
 
 servicestitlebox {
     background-color: white;
-    height: 10%;
     width: 250px;
     display: flex;
     align-items: center;
@@ -26,6 +25,7 @@ servicestitlebox {
 servicestitle {
     font-size: 2.25em;
     letter-spacing: .175em;
+    text-align: center;
 }
 
 servicesdescbox {
