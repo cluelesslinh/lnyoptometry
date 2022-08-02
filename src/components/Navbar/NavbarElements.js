@@ -8,7 +8,7 @@ text-decoration: none;
 letter-spacing: 0.25em;
 font-weight: 500;
 font-size: 11.5px;
-padding: 0 0 0 1.5rem;
+padding: 0 2% 0 2%;
 cursor: pointer;
 &.hover {
 	opacity: .7;

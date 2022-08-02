@@ -1,0 +1,110 @@
+.odBG {
+    padding-top: 1em;
+}
+
+.od-bg-box {
+    height: 325px;
+}
+
+.od-bg-img {
+    height: 1100px;
+    object-fit: cover;
+    object-position: 0 -22em;
+}
+
+odtitlebox {
+    background-color: white;
+    width: 60%;
+    width: 375px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 0 2rem 5rem;
+    flex-wrap: wrap;
+}
+
+odtitle {
+    font-size: 2.25em;
+    letter-spacing: .175em;
+    margin: 3% 5% 3% 5%;
+    line-height: 1.2em;
+}
+
+oddescbox {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color: white;
+    width: 95%;
+    max-width: 650px;
+    min-width: 425px;
+    margin: 0 0 0 5rem;
+    padding: 1em 0 1em 0;
+}
+
+oddesc {
+    font-weight: 600;
+    font-size: 1em;
+    letter-spacing: .075em;
+    padding: .25rem 5% .25rem 5%;
+}
+
+.odPage {
+    display: flex;
+    justify-content: center;
+    margin: 5em 5% 10em 5%;
+}
+
+.odRow {
+    width: 1000px;
+}
+
+.odImg {
+    margin: 2em 0 0 0;
+}
+
+.oddesc {
+    font-size: 16px;
+    margin: 1.5em 0 0 0;
+}
+
+.odName {
+    margin-top: 1em;
+    font-weight: 900;
+    font-size: 1.75em;
+    letter-spacing: .075em;
+}
+
+.odFooter {
+    margin: 2em 0 0 0;
+    font-size: 11px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .od-bg-box {
+        height: 25%;
+    }
+
+    odtitlebox {
+        margin: 3% 0 3% 3%;
+    }
+
+    oddescbox {
+        margin: 3% 0 3% 3%;
+    }
+
+    .odPage {
+        margin: 5% 3% 5% 3%;
+    }
+
+    .odImg {
+        margin: 10% 0 0 0;
+    }
+
+    .odFooter {
+        padding-bottom: 5%;
+    }
+
+}

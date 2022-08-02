@@ -21,7 +21,7 @@ const LNYnavbar = () => {
                             placement="end"
                         >
                             <Offcanvas.Body>
-                                <Nav className="justify-content-end flex-grow-1 pe-3 nav-item">
+                                <Nav className="justify-content-end nav-item">
                                     <NavLink reloadDocument to="/">HOME</NavLink><hr></hr>
                                     <NavLink reloadDocument to="/services">SERVICES</NavLink><hr></hr>
                                     <NavLink reloadDocument to="/payment-options">PAYMENT OPTIONS</NavLink><hr></hr>
