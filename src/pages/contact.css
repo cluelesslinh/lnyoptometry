@@ -1,100 +1,111 @@
-.poBG {
+.contactBG {
     padding-top: 1em;
 }
 
-.po-bg-box {
-    height: 350px;
+.contact-bg-box {
+    height: 400px;
 }
 
-.po-bg-img {
+.contact-bg-img {
     height: 1100px;
     object-fit: cover;
     object-position: 0 -19em;
     filter: brightness(110%);
 }
 
-potitlebox {
+contacttitlebox {
     background-color: white;
-    width: 60%;
-    max-width: 500px;
+    width: 75%;
+    max-width: 725px;
     min-width: 425px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 5rem 0 2rem 5rem;
+    margin: 4rem 0 2rem 5rem;
     flex-wrap: wrap;
 }
 
-potitle {
+contacttitle {
     font-size: 2.25em;
     letter-spacing: .175em;
     margin: 3% 5% 3% 5%;
     line-height: 1.2em;
 }
 
-podescbox {
+contactdescbox {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
     background-color: white;
-    width: 60%;
+    width: 75%;
     max-width: 625px;
     min-width: 425px;
     margin: 0 0 0 5rem;
     padding: 1em 0 1em 0;
 }
 
-payoptions {
+location {
     font-weight: 600;
     font-size: 1em;
     letter-spacing: .075em;
     padding: .25rem 5% .25rem 5%;
 }
 
-.poPage {
+.googleMap {
+    height: 50vh;
+    margin: 1em 0 2em 0;
+}
+
+.contactPage {
     display: flex;
     justify-content: center;
     margin: 5em 0 6em 0;
 }
 
-.poRow {
+.contactRow {
     width: 1000px;
 }
 
-.poImg {
-    margin: 2em 0 1em 0;
+.pbTitle {
+    font-size: 1.75em;
+    font-weight: 900;
 }
 
-.po-img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    object-position: 0 -11.5em;
-}
-
-.podesc {
+.contdesc {
     font-size: 14px;
     margin: 1.5em 0 0 0;
 }
 
-.poLink {
+.locLink {
     text-decoration: none;
     color: black;
 }
 
-.poLink:hover {
+.locLink:hover {
     color: black;
     opacity: .7;
 }
 
+.formLineBreak {
+    margin: 3em 0 0 0;
+}
+
 @media screen and (max-width: 1024px) {
 
-    .poPage {
+    contacttitlebox {
+        margin: 5% 5% 5% 5%;
+    }
+
+    contactdescbox {
+        margin: 5% 5% 5% 5%;
+    }
+
+    .contactPage {
         margin: 10% 10% 10% 10%;
     }
 
-    .po-img {
+    .contact-img {
         height: 250px;
         object-fit: cover;
         object-position: 0 -7.5em;
@@ -104,44 +115,14 @@ payoptions {
 
 @media screen and (max-width: 768px) {
 
-    .po-bg-box {
-        height: 25%;
-    }
-
-    potitlebox {
-        margin: 3% 0 3% 3%;
-    }
-
-    podescbox {
-        margin: 3% 0 3% 3%;
-    }
-
-    .poPage {
+    .contactPage {
         margin: 10% 3% 5% 3%;
     }
 
-    .poImg {
-        margin: 10% 0 10% 0;
-    }
-
-    .po-img {
-        height: 200px;
-        object-fit: cover;
-        object-position: 0 -5.5em;
-    }
-
-    .podesc {
+    .contactdesc {
         margin: 0 0 7% 0;
     }
 
 }
 
-@media screen and (max-width: 500px) {
-
-    .po-img {
-        height: 150px;
-        object-fit: cover;
-        object-position: 0 -3.5em;
-    }
-
-}
+@media screen and (max-width: 500px) {}

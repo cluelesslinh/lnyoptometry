@@ -118,6 +118,7 @@ span.sideLOC {
     height: 1100px;
     object-fit: cover;
     object-position: 0 -8em;
+    filter: brightness(110%);
 }
 
 .MSRow {
@@ -147,6 +148,7 @@ span.sideLOC {
     height: 1100px;
     object-fit: cover;
     object-position: 0 -5em;
+    filter: brightness(110%);
 }
 
 .WbgRow {
@@ -169,6 +171,7 @@ span.sideLOC {
     height: 1100px;
     object-fit: cover;
     object-position: 0 -5em;
+    filter: brightness(110%);
 }
 
 #LocationContact {

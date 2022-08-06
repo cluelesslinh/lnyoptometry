@@ -10,6 +10,7 @@
     height: 1100px;
     object-fit: cover;
     object-position: 0 -24em;
+    filter: brightness(110%);
 }
 
 servicestitlebox {
