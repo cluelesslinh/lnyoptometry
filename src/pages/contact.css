@@ -87,8 +87,9 @@ location {
     opacity: .7;
 }
 
-.formLineBreak {
+hr {
     margin: 3em 0 0 0;
+    opacity: 35%;
 }
 
 @media screen and (max-width: 1024px) {

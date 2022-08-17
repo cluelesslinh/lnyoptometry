@@ -32,7 +32,7 @@ const PaymentOptions = () => {
                     </MDBCol>
 
                     <MDBCol className="poImg col-12">
-                        <img className="po-img" src={process.env.PUBLIC_URL + "/images/pamphletLNY.jpg"} alt="pamphletLNY" />
+                        <img className="po-img img-fluid" src={process.env.PUBLIC_URL + "/images/pamphletLNY.jpg"} alt="pamphletLNY" />
                     </MDBCol>
 
                     <MDBCol className="poDesc col-12 col-lg-6 col-md-6 col-sm-6">

@@ -111,27 +111,18 @@ span.sideLOC {
 }
 
 .home-top-bg {
-    height: 750px;
+    height: 100vh;
+    min-height: 500px;
+    margin-bottom: 5em;
 }
 
 .home-topimg {
-    height: 1100px;
+    min-width: 100vmax;
     object-fit: cover;
-    object-position: 0 -8em;
-    filter: brightness(110%);
 }
 
 .MSRow {
-    max-width: 1000px;
     padding-bottom: 1em;
-}
-
-.MSmain {
-    padding-right: .8em;
-}
-
-.MSsub {
-    padding-right: .8em;
 }
 
 #WhyBuyGlasses {
@@ -139,20 +130,17 @@ span.sideLOC {
 }
 
 .home-mid-bg {
-    height: 575px;
-    width: auto;
-    margin: 0;
+    height: 67vh;
+    min-height: 500px;
 }
 
 .home-midimg {
-    height: 1100px;
+    min-width: 100vmax;
     object-fit: cover;
-    object-position: 0 -5em;
-    filter: brightness(110%);
 }
 
 .WbgRow {
-    max-width: 1000px;
+    margin: 0 3% 0 3%;
     padding-bottom: 1em;
 }
 
@@ -162,16 +150,13 @@ span.sideLOC {
 }
 
 .home-bot-bg {
-    height: 575px;
-    width: auto;
-    margin: 0;
+    height: 67vh;
+    min-height: 500px;
 }
 
 .home-botimg {
-    height: 1100px;
+    min-width: 100vmax;
     object-fit: cover;
-    object-position: 0 -5em;
-    filter: brightness(110%);
 }
 
 #LocationContact {
@@ -179,7 +164,7 @@ span.sideLOC {
 }
 
 .LocRow {
-    max-width: 1000px;
+    margin: 0 3% 0 3%;
     padding-bottom: 1em;
 }
 
@@ -268,6 +253,10 @@ body.modal-open {
 }
 
 @media screen and (max-width: 768px) {
+
+    .home-top-bg {
+        margin-bottom: 3%;
+    }
 
     .MSmain {
         width: 100%;
