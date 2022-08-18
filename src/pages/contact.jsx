@@ -82,7 +82,7 @@ const Contact = () => {
             </section>
 
             <section className="contactPage">
-                <MDBRow className="contactRow">
+                <MDBRow className="contactRow col-xl-7 col-lg-10 col-md-12">
 
                     <MDBCol className="col-12">
                         <MapWrapper />

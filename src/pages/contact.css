@@ -7,10 +7,9 @@
 }
 
 .contact-bg-img {
-    height: 1100px;
+    min-width: 100vw;
     object-fit: cover;
     object-position: 0 -19em;
-    filter: brightness(110%);
 }
 
 contacttitlebox {
@@ -63,10 +62,6 @@ location {
     margin: 5em 0 6em 0;
 }
 
-.contactRow {
-    width: 1000px;
-}
-
 .pbTitle {
     font-size: 1.75em;
     font-weight: 900;
@@ -92,6 +87,10 @@ hr {
     opacity: 35%;
 }
 
+.contInqImg {
+    height: 325px;
+}
+
 @media screen and (max-width: 1024px) {
 
     contacttitlebox {
@@ -102,14 +101,14 @@ hr {
         margin: 5% 5% 5% 5%;
     }
 
-    .contactPage {
-        margin: 10% 10% 10% 10%;
-    }
-
     .contact-img {
         height: 250px;
         object-fit: cover;
         object-position: 0 -7.5em;
+    }
+
+    .contactPage {
+        margin: 10% 10% 10% 10%;
     }
 
 }

@@ -3,14 +3,14 @@
 }
 
 .services-bg-box {
-    height: 300px;
+    min-height: 315px;
+    margin-bottom: 5em;
 }
 
 .services-bg-img {
-    height: 1100px;
+    min-width: 100vmax;
     object-fit: cover;
-    object-position: 0 -24em;
-    filter: brightness(110%);
+    object-position: 0 -22em;
 }
 
 servicestitlebox {
@@ -58,7 +58,7 @@ servicesdesc {
 .servicesRow {
     max-width: 1000px;
     text-align: center;
-    margin: 6em 5% 0 5%;
+    margin: 0 5% 0 5%;
 }
 
 .servicesDesc {
@@ -86,10 +86,8 @@ servicesdesc {
 
 @media screen and (max-width: 1024px) {
 
-    .services-bg-img {
-        height: 875px;
-        object-fit: cover;
-        object-position: -1.5em -15em;
+    .services-bg-box {
+        margin-bottom: 5%;
     }
 
 }
@@ -97,13 +95,7 @@ servicesdesc {
 @media screen and (max-width: 768px) {
 
     .services-bg-box {
-        height: 25%;
-    }
-
-    .services-bg-img {
-        height: 675px;
-        object-fit: cover;
-        object-position: -1.75em -11em;
+        margin-bottom: 3%;
     }
 
     servicestitlebox {
@@ -115,7 +107,7 @@ servicesdesc {
     }
 
     .servicesRow {
-        margin: 5% 5% 0 5%;
+        margin: 0 5% 0 5%;
     }
 
     .imageRow {
@@ -125,12 +117,6 @@ servicesdesc {
 }
 
 @media screen and (max-width: 500px) {
-
-    .services-bg-img {
-        height: 450px;
-        object-fit: cover;
-        object-position: 0 -5em;
-    }
 
     .imageRow {
         margin: 0 3% 5% 3%;

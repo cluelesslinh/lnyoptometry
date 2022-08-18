@@ -80,7 +80,7 @@ const Home = () => {
         <div>
 
             <section id="LNYoptometry">
-                <Parallax className="home-top-bg" strength={500}>
+                <Parallax className="home-top-bg" strength={750}>
                     <Background>
                         <img className="home-topimg" src={process.env.PUBLIC_URL + "/images/home-top.jpg"} alt="main-entrance" /></Background>
                     <TopTitleBox>
@@ -138,7 +138,7 @@ const Home = () => {
             </section>
 
             <section id="WhyBuyGlasses">
-                <Parallax className="home-mid-bg" strength={500}>
+                <Parallax className="home-mid-bg" strength={750}>
                     <Background>
                         <img className="home-midimg" src={process.env.PUBLIC_URL + "/images/home-middle.jpg"} alt="glasses-closeup" /></Background>
                     <MidTitleBox>
@@ -225,7 +225,7 @@ const Home = () => {
             </section>
 
             <section id="LocationContact">
-                <Parallax className="home-bot-bg" strength={500}>
+                <Parallax className="home-bot-bg" strength={750}>
                     <Background>
                         <img className="home-botimg" src={process.env.PUBLIC_URL + "/images/home-bottom.jpg"} alt="sidewall" /></Background>
                     <BotTitleBox>

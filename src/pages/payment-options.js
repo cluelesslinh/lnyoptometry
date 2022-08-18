@@ -23,7 +23,7 @@ const PaymentOptions = () => {
             </section>
 
             <section className="poPage">
-                <MDBRow className="poRow">
+                <MDBRow className="poRow col-xl-7 col-lg-7 col-md-12">
 
                     <MDBCol className="poDesc col-12">
                         We make every effort to ensure all fees are fair and reasonable. Charges are discussed

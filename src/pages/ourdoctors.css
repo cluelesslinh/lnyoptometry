@@ -7,9 +7,9 @@
 }
 
 .od-bg-img {
-    height: 1100px;
+    min-width: 100vw;
     object-fit: cover;
-    object-position: 0 -22em;
+    object-position: 0 -40vh;
 }
 
 odtitlebox {
@@ -54,10 +54,6 @@ oddesc {
     display: flex;
     justify-content: center;
     margin: 5em 5% 10em 5%;
-}
-
-.odRow {
-    width: 1000px;
 }
 
 .odImg {

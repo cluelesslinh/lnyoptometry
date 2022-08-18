@@ -23,7 +23,7 @@ const OurDoctors = () => {
             </section>
 
             <section className="odPage">
-                <MDBRow className="odRow">
+                <MDBRow className="odRow col-xl-7 col-lg-12">
                     <MDBCol className="oddesc col-12">
                         MISSION STATEMENT:
                     </MDBCol>

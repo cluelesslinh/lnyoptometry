@@ -119,6 +119,8 @@ span.sideLOC {
 .home-topimg {
     min-width: 100vmax;
     object-fit: cover;
+    object-position: 0 -7em;
+
 }
 
 .MSRow {

@@ -7,10 +7,9 @@
 }
 
 .po-bg-img {
-    height: 1100px;
+    min-width: 100vmax;
     object-fit: cover;
     object-position: 0 -19em;
-    filter: brightness(110%);
 }
 
 potitlebox {
@@ -56,10 +55,6 @@ payoptions {
     display: flex;
     justify-content: center;
     margin: 5em 0 6em 0;
-}
-
-.poRow {
-    width: 1000px;
 }
 
 .poImg {
