@@ -83,12 +83,77 @@ location {
 }
 
 hr {
-    margin: 3em 0 0 0;
+    margin: 3em 0 3em 0;
     opacity: 35%;
 }
 
+.contInqTitle {
+    font-weight: 900;
+    font-size: 1.75em;
+    letter-spacing: .1em;
+    margin-bottom: .5em;
+}
+
+.contInqEmail {
+    text-decoration: none;
+    margin-bottom: 2em;
+}
+
 .contInqImg {
-    height: 325px;
+    max-height: 325px;
+}
+
+.emailForm {
+    font-size: 14px;
+    color: black;
+}
+
+input,
+select,
+textarea {
+    color: black;
+}
+
+textarea:focus,
+input:focus {
+    outline: solid 1px blue !important;
+    color: black;
+    box-shadow: none !important;
+}
+
+.form-control {
+    background-color: rgb(248, 248, 248);
+    outline: solid 1px gray;
+}
+
+.form-group {
+    margin: 0 0 2em 0;
+    color: black;
+}
+
+.formRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.formBoxLeft {
+    padding-right: .3em;
+}
+
+.formBoxRight {
+    padding-left: .3em;
+}
+
+.nameLabel {
+    font-size: 11px;
+}
+
+.btn {
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: .1em;
+    padding: .75em 2.25em .75em 2.25em;
 }
 
 @media screen and (max-width: 1024px) {
@@ -111,6 +176,10 @@ hr {
         margin: 10% 10% 10% 10%;
     }
 
+    .contInqImg {
+        margin-bottom: 2em;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -123,6 +192,9 @@ hr {
         margin: 0 0 7% 0;
     }
 
+    .contInqImg {
+        max-height: 100%;
+    }
 }
 
 @media screen and (max-width: 500px) {}
