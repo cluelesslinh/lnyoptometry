@@ -1,0 +1,292 @@
+.sideNav {
+    position: fixed;
+    display: inline-block;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+}
+
+.sideNav li {
+    list-style-type: none;
+}
+
+.sideLNY {
+    top: .385em;
+}
+
+.sideWBG {
+    top: 3em;
+}
+
+.sideLOC {
+    top: 5.65em;
+}
+
+.hidden {
+    visibility: hidden;
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+    font-size: 1.3em;
+    font-weight: 600;
+    letter-spacing: .1em;
+    transition: all .3s;
+}
+
+.dropDownLNY:hover .sideLNY {
+    visibility: visible;
+    width: 150px;
+    opacity: 1;
+}
+
+span.sideLNY {
+    width: 130px;
+    opacity: 0;
+}
+
+.dropDownWBG:hover .sideWBG {
+    visibility: visible;
+    width: 375px;
+    opacity: 1;
+}
+
+span.sideWBG {
+    width: 355px;
+    opacity: 0;
+}
+
+.dropDownLOC:hover .sideLOC {
+    visibility: visible;
+    width: 240px;
+    opacity: 1;
+}
+
+span.sideLOC {
+    width: 220px;
+    opacity: 0;
+}
+
+.dot.whiteDot {
+    background-color: white;
+    outline: .2em solid white;
+}
+
+.dropItem.whiteText,
+.dropItem:hover.whiteText {
+    color: white;
+}
+
+.dropItem.blackText,
+.dropItem:hover.blackText {
+    color: black;
+}
+
+.dropItem,
+.dropItem:hover,
+.dropItem:focus,
+.dropItem:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.dot {
+    cursor: pointer;
+    margin: .5rem .2rem .5rem 0;
+    display: block;
+    height: .7em;
+    width: .7em;
+    border-radius: 50%;
+    color: initial;
+    outline: 2px solid black;
+    background-color: black;
+    transition: .3s ease all;
+}
+
+.active {
+    background-color: transparent !important;
+}
+
+.home-top-bg {
+    height: 90vh;
+    min-height: 500px;
+}
+
+.home-topimg {
+    min-width: 100vmax;
+    height: 100vh;
+    object-fit: cover;
+    object-position: 0 -7.5em;
+}
+
+.MSRow {
+    margin: 0 3% 0 3%;
+    padding-bottom: 1em;
+}
+
+#WhyBuyGlasses {
+    padding-top: 5em;
+}
+
+.home-mid-bg {
+    height: 67vh;
+    min-height: 500px;
+}
+
+.home-midimg {
+    min-width: 100vmax;
+    object-fit: cover;
+}
+
+.WbgRow {
+    margin: 0 3% 0 3%;
+    padding-bottom: 1em;
+}
+
+.WbgSub {
+    height: 150%;
+    object-fit: cover;
+}
+
+.home-bot-bg {
+    height: 67vh;
+    min-height: 500px;
+}
+
+.home-botimg {
+    min-width: 100vmax;
+    object-fit: cover;
+}
+
+#LocationContact {
+    padding-top: 5em;
+}
+
+.LocRow {
+    margin: 0 3% 0 3%;
+    padding-bottom: 1em;
+}
+
+.LocSub {
+    padding: 3% 0 0 0;
+}
+
+.locationCoord {
+    color: black;
+}
+
+.locationCoord:hover {
+    color: black;
+}
+
+.clickEnlarge {
+    cursor: pointer;
+}
+
+body.modal-open {
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+.modal-backdrop {
+    opacity: .95 !important;
+}
+
+.modal.fade .modal-dialog {
+    -webkit-transition: -webkit-transform .2s ease all;
+    -o-transition: -o-transform .2s ease all;
+    transition: transform .2s ease all;
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+    transition-duration: 2;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.modal-content {
+    background-color: transparent;
+    align-items: center;
+}
+
+.modal-body {
+    max-height: 100vh;
+    max-width: calc(100vw - 25%);
+}
+
+.close {
+    position: fixed;
+    right: 1%;
+    top: 1%;
+    cursor: pointer;
+    color: lightgray;
+    text-align: center;
+    border: 1px dotted lightgray;
+    width: .85em;
+    height: .85em;
+    font-size: 2em;
+    z-index: 1;
+}
+
+.close span {
+    position: relative;
+    bottom: .475em;
+}
+
+.close:hover {
+    border: 1px dotted transparent !important;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .sideNav {
+        visibility: hidden;
+    }
+
+    .modal-body {
+        max-height: 100vh;
+        max-width: calc(100vw - 3%);
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .home-top-bg {
+        margin-bottom: 3%;
+    }
+
+    .MSmain {
+        width: 100%;
+        padding: 1em 0 2em 0;
+    }
+
+    .MSsub {
+        width: 100%;
+        padding-bottom: 2em;
+    }
+
+    #WhyBuyGlasses {
+        padding-top: 3%;
+    }
+
+    .WbgSub {
+        height: 275px;
+        width: 100%;
+        padding-bottom: 2em;
+    }
+
+    #LocationContact {
+        padding-top: 3%;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .WbgSub {
+        height: 225px;
+        width: 100%;
+    }
+
+}

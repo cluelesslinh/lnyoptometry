@@ -6,13 +6,13 @@ import Footer from './components/Footer';
 import ScrollButton from './components/ScrollButton';
 import { BrowserRouter as Router, Routes, Route }
   from 'react-router-dom';
-import Home from './pages';
-import Services from './pages/services';
-import PaymentOptions from './pages/payment-options';
-import Contact from './pages/contact';
-import OurDoctors from './pages/our-doctors';
-import Gallery from './pages/gallery';
-import Reviews from './pages/reviews';
+import Home from './pages/Home';
+import Services from './pages/Services/services';
+import PaymentOptions from './pages/PaymentOptions/payment-options';
+import Contact from './pages/Contact/contact';
+import OurDoctors from './pages/OurDoctors/our-doctors';
+import Gallery from './pages/Gallery/gallery';
+import Reviews from './pages/Reviews/reviews';
 
 function App() {
   return (
