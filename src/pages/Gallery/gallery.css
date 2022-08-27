@@ -1,5 +1,77 @@
+#myCarousel {
+    margin-bottom: 2em;
+}
+
+.carousel-item {
+    height: 80vh;
+}
+
 .gallery-img {
     width: 100vw;
     height: 75vh;
     object-fit: cover;
+}
+
+.carousel .carousel-indicators li {
+    background-color: gray;
+    border-radius: 12px;
+    width: 10px;
+    height: 10px;
+    bottom: -25px;
+    margin: 0 .75em 0 .75em !important;
+}
+
+.carousel .carousel-indicators li.active {
+    background-color: black !important;
+}
+
+.prevBtn {
+    width: 50vw !important;
+    height: 75vh;
+}
+
+.prevBtn:hover .prevIcon {
+    visibility: visible;
+}
+
+.prevIcon {
+    position: absolute;
+    left: 3em;
+}
+
+.nextBtn {
+    width: 50vw !important;
+    height: 75vh;
+}
+
+.nextBtn:hover .nextIcon {
+    visibility: visible;
+}
+
+.nextIcon {
+    position: absolute;
+    right: 3em;
+}
+
+.galleryFooter {
+    background-color: black;
+    height: 17vh;
+    width: 100vw;
+    position: absolute;
+    bottom: 5vh;
+    z-index: 2;
+}
+
+.footerTitle {
+    color: white;
+    font-size: .85em;
+    font-weight: 600;
+    margin: 3em 0 0 6em;
+}
+
+.footerDesc {
+    color: silver;
+    font-size: .85em;
+    font-weight: 600;
+    margin: .5em 0 0 6em;
 }
