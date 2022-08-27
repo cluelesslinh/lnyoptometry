@@ -27,7 +27,7 @@ const Gallery = () => {
             <li data-target="#myCarousel" data-slide-to="11" className="imageDot"></li>
           </ol>
 
-          <div className="galleryFooter">
+          <div className="galleryFooter footerHide">
             <div className="footerTitle">LNY optometry</div>
             <div className="footerDesc">Eye Exams, Contact Lenses, and Glasses in San Diego.</div>
           </div>

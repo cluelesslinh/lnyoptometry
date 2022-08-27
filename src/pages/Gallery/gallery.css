@@ -28,6 +28,7 @@
 .prevBtn {
     width: 50vw !important;
     height: 75vh;
+    z-index: 3;
 }
 
 .prevBtn:hover .prevIcon {
@@ -42,6 +43,7 @@
 .nextBtn {
     width: 50vw !important;
     height: 75vh;
+    z-index: 3;
 }
 
 .nextBtn:hover .nextIcon {
@@ -53,9 +55,13 @@
     right: 3em;
 }
 
+.footerHide {
+    visibility: hidden;
+}
+
 .galleryFooter {
-    background-color: black;
-    height: 17vh;
+    background: rgba(0, 0, 0, .7);
+    min-height: 135px;
     width: 100vw;
     position: absolute;
     bottom: 5vh;
@@ -66,12 +72,17 @@
     color: white;
     font-size: .85em;
     font-weight: 600;
-    margin: 3em 0 0 6em;
+    margin: 3em 0 0 5em;
 }
 
 .footerDesc {
+    position: absolute;
     color: silver;
     font-size: .85em;
     font-weight: 600;
-    margin: .5em 0 0 6em;
+    margin: .5em 0 0 5em;
+}
+
+#myCarousel:hover .galleryFooter {
+    visibility: visible;
 }
