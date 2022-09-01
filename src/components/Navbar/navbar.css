@@ -23,8 +23,8 @@
 }
 
 .fa {
-    transform: scale(1.35, 1);
-    margin: 0 1.5em 3em 0;
+    transform: scale(1.25, .9);
+    margin: 0 1em 4em 0;
 }
 
 .custom-toggler,
@@ -32,13 +32,12 @@
 .custom-toggler:focus,
 .custom-toggler:active,
 .custom-toggler-icon:focus {
-    background-image: none;
-    border: none;
-    outline: none;
-    box-shadow: none;
-    width: 0;
-    height: auto;
-    font-size: 1em;
+    background-image: none !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    width: 0 !important;
+    height: 0 !important;
 }
 
 .offcanvas {

@@ -96,14 +96,14 @@ const Home = () => {
 
                 <MSContainer>
 
-                    <MDBRow className="MSRow col-xl-7 col-lg-12">
-                        <MDBCol className="col-12 col-sm-8">
+                    <MDBRow className="MSRow col-xl-8 col-lg-12">
+                        <MDBCol className="col-12 col-md-8 col-sm-12">
                             <div className="clickEnlarge MSmain">
                                 <img data-toggle="modal" data-target="#mainMS" className="img-fluid" src={process.env.PUBLIC_URL + "/images/home-ms-main.jpg"} alt="Glasses-Showcase"
                                 />
                             </div>
                         </MDBCol>
-                        <MDBCol className="MSdescBox col-12 col-sm-4">
+                        <MDBCol className="MSdescBox col-12 col-md-4 col-sm-12">
                             <MSdescription><MStitle>MISSION STATEMENT:</MStitle></MSdescription>
                             <MSdescription>The mission is simple: provide quality eye care with a personal touch and excellent customer
                                 service that patients will want to return year after year.
@@ -117,18 +117,18 @@ const Home = () => {
                             </MSdescription>
                         </MDBCol>
                     </MDBRow>
-                    <MDBRow className="MSRow col-xl-7 col-lg-12">
-                        <MDBCol className="col-12 col-md-4 col-sm-4">
+                    <MDBRow className="MSRow col-xl-8 col-lg-12">
+                        <MDBCol className="col-12 col-md-4 col-sm-12">
                             <div className="clickEnlarge MSsub">
                                 <img data-toggle="modal" data-target="#subMS1" className="img-fluid" src={process.env.PUBLIC_URL + "/images/home-ms-1.jpg"} alt="LNYsign" />
                             </div>
                         </MDBCol>
-                        <MDBCol className="col-12 col-md-4 col-sm-4">
+                        <MDBCol className="col-12 col-md-4 col-sm-12">
                             <div className="clickEnlarge MSsub">
                                 <img data-toggle="modal" data-target="#subMS2" className="img-fluid" src={process.env.PUBLIC_URL + "/images/auto-refractor.jpg"} alt="oculars" />
                             </div>
                         </MDBCol>
-                        <MDBCol className="col-12 col-md-4 col-sm-4">
+                        <MDBCol className="col-12 col-md-4 col-sm-12">
                             <div className="clickEnlarge MSsub">
                                 <img data-toggle="modal" data-target="#subMS3" className="img-fluid" src={process.env.PUBLIC_URL + "/images/retina.jpg"} alt="retina" />
                             </div>
@@ -150,7 +150,7 @@ const Home = () => {
                 </Parallax>
 
                 <WbgBox>
-                    <MDBRow className="WbgRow col-xl-7 col-lg-12">
+                    <MDBRow className="WbgRow col-xl-8 col-lg-12">
                         <MDBCol className="col-6 col-lg-3 col-md-3"><img className="WbgSub img-fluid"
                             src={process.env.PUBLIC_URL + "/images/home-wbg-1.jpg"} alt="Glasses-Incase"
                         /></MDBCol>
@@ -167,7 +167,7 @@ const Home = () => {
                 </WbgBox>
 
                 <WbgDescBox>
-                    <MDBRow className="WbgRow col-xl-7 col-lg-12">
+                    <MDBRow className="WbgRow WbgRowDesc col-xl-8 col-lg-12">
                         <MDBCol className="col-12 col-lg-6 col-md-6">
                             <WbgDesc>
                                 Craftsmanship takes more than one hour to achieve. There are dozens of critical steps
@@ -240,7 +240,7 @@ const Home = () => {
                 </Parallax>
 
                 <LocContainer>
-                    <MDBRow className="LocRow col-xl-7 col-lg-12">
+                    <MDBRow className="LocRow col-xl-8 col-lg-12">
                         <MDBCol className="col-12 col-lg-4 col-md-4 col-sm-4">
                             <LocTitle>LOCATION</LocTitle>
                             <LocDesc>We are pleased to introduce you to our office. Conveniently located in Pacific Beach,
@@ -268,7 +268,7 @@ const Home = () => {
                                 className="locationCoord" target="blank">32°48'06.5"N 117°14'09.8"W</a></locDesc>
                         </MDBCol>
                     </MDBRow>
-                    <MDBRow className="LocRow col-xl-7 col-lg-12">
+                    <MDBRow className="LocRow col-xl-8 col-lg-12">
                         <MDBCol className="col-12 col-md-6 col-sm-6">
                             <div className="clickEnlarge LocSub">
                                 <img data-toggle="modal" data-target="#locSub1" className="img-fluid" src={process.env.PUBLIC_URL + "/images/home-location-1.jpg"} alt="front-office" />
@@ -314,7 +314,7 @@ const Home = () => {
             </div>
 
             <div class="modal fade" id="mainMS" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modalMS" role="document">
+                <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                         <div class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>

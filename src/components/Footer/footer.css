@@ -8,7 +8,7 @@
 }
 
 .footerDescCol {
-    padding-left: 20%;
+    padding-left: 20% !important;
 }
 
 .footerLink {
@@ -29,11 +29,11 @@ ul li:hover a {
 @media screen and (max-width: 1024px) {
 
     .footerContainer {
-        padding: 5% 0 0 0;
+        padding: 5% 0 5% 0;
     }
 
     .footerDescCol {
-        padding-left: 15%;
+        padding-left: 15% !important;
     }
 
 }
@@ -41,11 +41,11 @@ ul li:hover a {
 @media screen and (max-width: 768px) {
 
     .footerDescCol {
-        padding: 3% 0 2em 7.5%;
+        padding: 3% 0 2em 7.5% !important;
     }
 
     .footerLinkCol {
-        padding: 3% 0 5% 10%;
+        padding: 3% 0 5% 10% !important;
     }
 
 }

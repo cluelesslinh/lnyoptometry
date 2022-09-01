@@ -49,7 +49,7 @@ justify-content: center;
 flex-wrap: wrap;
 margin-top: 5em;
 @media screen and (max-width: 768px) {
-   margin: 0 3% 3% 3%;
+   margin: 0;
 }
 `;
 

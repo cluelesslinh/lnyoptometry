@@ -107,15 +107,14 @@ span.sideLOC {
 }
 
 .home-top-bg {
-    height: 90vh;
-    min-height: 500px;
+    height: 100vh;
 }
 
 .home-topimg {
     min-width: 100vmax;
-    height: 100vh;
+    min-height: 100vh;
     object-fit: cover;
-    object-position: 0 -7.5em;
+    object-position: 0 -2.5em;
 }
 
 .MSRow {
@@ -143,7 +142,7 @@ span.sideLOC {
 }
 
 .WbgSub {
-    height: 150%;
+    height: 150% !important;
     object-fit: cover;
 }
 
@@ -183,54 +182,54 @@ span.sideLOC {
 }
 
 body.modal-open {
-    overflow: hidden;
-    margin-right: 15px;
+    height: 100vh;
+    overflow-y: hidden;
+    padding-right: 15px;
 }
 
 .modal-backdrop {
-    opacity: .95 !important;
+    opacity: .8 !important;
 }
 
 .modal.fade .modal-dialog {
-    -webkit-transition: -webkit-transform .2s ease all;
-    -o-transition: -o-transform .2s ease all;
-    transition: transform .2s ease all;
-    -webkit-transform: translate(0, 0);
-    -ms-transform: translate(0, 0);
-    -o-transform: translate(0, 0);
-    transform: translate(0, 0);
-    transition-duration: 2;
-    max-width: 100%;
-    max-height: 100%;
+    -webkit-transition: -webkit-transform .2s ease all !important;
+    -o-transition: -o-transform .2s ease all !important;
+    transition: transform .2s ease all !important;
+    -webkit-transform: translate(0, 0) !important;
+    -ms-transform: translate(0, 0) !important;
+    -o-transform: translate(0, 0) !important;
+    transform: translate(0, 0) !important;
+    transition-duration: 2 !important;
+    max-width: 120vmin;
+    padding-left: 1em;
 }
 
 .modal-content {
-    background-color: transparent;
-    align-items: center;
+    background: none !important;
 }
 
 .modal-body {
-    max-height: 100vh;
-    max-width: calc(100vw - 25%);
+    text-align: center;
+    padding: 0 !important;
 }
 
 .close {
     position: fixed;
-    right: 1%;
-    top: 1%;
+    right: 0;
+    top: 0;
     cursor: pointer;
-    color: lightgray;
+    color: white !important;
     text-align: center;
-    border: 1px dotted lightgray;
+    border: 1px dotted white;
     width: .85em;
     height: .85em;
-    font-size: 2em;
+    font-size: 2em !important;
     z-index: 1;
 }
 
 .close span {
     position: relative;
-    bottom: .475em;
+    bottom: .25em;
 }
 
 .close:hover {
@@ -241,11 +240,6 @@ body.modal-open {
 
     .sideNav {
         visibility: hidden;
-    }
-
-    .modal-body {
-        max-height: 100vh;
-        max-width: calc(100vw - 3%);
     }
 
 }
@@ -271,9 +265,12 @@ body.modal-open {
     }
 
     .WbgSub {
-        height: 275px;
-        width: 100%;
-        padding-bottom: 2em;
+        height: 115% !important;
+        padding: 2em 0 2em 0;
+    }
+
+    .WbgRowDesc {
+        margin-top: 2em;
     }
 
     #LocationContact {
@@ -283,10 +280,7 @@ body.modal-open {
 }
 
 @media screen and (max-width: 500px) {
-
-    .WbgSub {
-        height: 225px;
-        width: 100%;
+    body {
+        position: fixed;
     }
-
 }
