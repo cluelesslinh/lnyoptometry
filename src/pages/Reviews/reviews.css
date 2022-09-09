@@ -1,3 +1,46 @@
 .reviewsRow {
-    max-width: 1100px;
+    margin-top: 5em;
+    padding-left: 5em;
+}
+
+.reviewTitle {
+    font-size: 2.5em;
+    letter-spacing: .2em;
+}
+
+.reviewDesc {
+    font-size: 18px;
+    margin: 1.5em 0 1.5em 0;
+}
+
+.privacyRow {
+    display: flex;
+    justify-content: center;
+    margin-top: 10em;
+    padding: 0 5% 0 5%;
+}
+
+.privacyTitle {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.privacyDesc {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .15em;
+    line-height: 3.5em;
+    margin: 2em 0 5em 0;
+}
+
+.privacyDesc li {
+    font-size: 11px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .reviewsRow {
+        padding: 0 5% 0 5%;
+    }
+
 }
