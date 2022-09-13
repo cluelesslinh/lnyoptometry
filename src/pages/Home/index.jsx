@@ -19,9 +19,9 @@ const Home = () => {
         $('.dot').each(function () {
             var elementPositionTop = parseFloat($(this).offset().top) + (parseFloat($(this).height() / 2));
 
-            if (elementPositionTop >= 0 && elementPositionTop <= 1110 || elementPositionTop >= 1865 &&
-                elementPositionTop <= 2300 || elementPositionTop >= 3220 && elementPositionTop <= 3800
-                || elementPositionTop >= 4540) {
+            if (elementPositionTop >= 0 && elementPositionTop <= 830 || elementPositionTop >= 1600 &&
+                elementPositionTop <= 2120 || elementPositionTop >= 3100 && elementPositionTop <= 3630
+                || elementPositionTop >= 4375) {
                 $(this).addClass('whiteDot');
             } else {
                 $(this).removeClass('whiteDot');
@@ -36,9 +36,9 @@ const Home = () => {
         $('.dropItem').each(function () {
             var elementPositionTop = parseFloat($(this).offset().top) + (parseFloat($(this).height() / 2));
 
-            if (elementPositionTop >= 0 && elementPositionTop <= 900 || elementPositionTop >= 1710 &&
-                elementPositionTop <= 2285 || elementPositionTop >= 3205 && elementPositionTop <= 3785
-                || elementPositionTop >= 4525) {
+            if (elementPositionTop >= 0 && elementPositionTop <= 830 || elementPositionTop >= 1600 &&
+                elementPositionTop <= 2120 || elementPositionTop >= 3100 && elementPositionTop <= 3630
+                || elementPositionTop >= 4375) {
                 $(this).addClass('whiteText') &&
                     $(this).removeClass('blackText');
             } else {
@@ -80,7 +80,7 @@ const Home = () => {
         <div>
 
             <section id="LNYoptometry">
-                <Parallax className="home-top-bg" strength={750}>
+                <Parallax className="home-top-bg" strength={700}>
                     <Background>
                         <img className="home-topimg" src={process.env.PUBLIC_URL + "/images/home-top.jpg"} alt="main-entrance" /></Background>
                     <TopTitleBox>
@@ -138,7 +138,7 @@ const Home = () => {
             </section>
 
             <section id="WhyBuyGlasses">
-                <Parallax className="home-mid-bg" strength={750}>
+                <Parallax className="home-mid-bg" strength={700}>
                     <Background>
                         <img className="home-midimg" src={process.env.PUBLIC_URL + "/images/home-middle.jpg"} alt="glasses-closeup" /></Background>
                     <MidTitleBox>
@@ -225,7 +225,7 @@ const Home = () => {
             </section>
 
             <section id="LocationContact">
-                <Parallax className="home-bot-bg" strength={750}>
+                <Parallax className="home-bot-bg" strength={700}>
                     <Background>
                         <img className="home-botimg" src={process.env.PUBLIC_URL + "/images/home-bottom.jpg"} alt="sidewall" /></Background>
                     <BotTitleBox>
