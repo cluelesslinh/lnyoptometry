@@ -1,14 +1,42 @@
 import React from 'react';
+import $ from 'jquery';
 import { Parallax, Background } from 'react-parallax';
 import { MDBRow, MDBCol, } from 'mdb-react-ui-kit';
 import "./paymentoptions.css";
+
+$('img[data-enlargeable]').addClass('img-enlargeable').click(function () {
+    var src = $(this).attr('src');
+    var modal;
+
+    function removeModal() {
+        modal.remove();
+        $('body').off('keyup.modal-close');
+    }
+    modal = $('<div>').css({
+        background: 'RGBA(0,0,0,0) url(' + src + ') no-repeat center',
+        position: 'fixed',
+        width: '100%',
+        height: '100%',
+        zIndex: '10000',
+        top: '0',
+        left: '0',
+    }).click(function () {
+        removeModal();
+    }).appendTo('body');
+
+    $('body').on('keyup.modal-close', function (e) {
+        if (e.key === 'Escape') {
+            removeModal();
+        }
+    });
+});
 
 const PaymentOptions = () => {
     return (
         <div>
 
             <section className="poBG">
-                <Parallax className="po-bg-box" strength={750}>
+                <Parallax className="po-bg-box" strength={700}>
                     <Background>
                         <img className="po-bg-img" src={process.env.PUBLIC_URL + "/images/cellphoneLNY.jpg"} alt="cellphoneLNY" /></Background>
                     <potitlebox>
@@ -23,7 +51,7 @@ const PaymentOptions = () => {
             </section>
 
             <section className="poPage">
-                <MDBRow className="poRow col-xl-7 col-lg-7 col-md-12">
+                <MDBRow className="poRow col-lg-9 col-md-12">
 
                     <MDBCol className="poDesc col-12">
                         We make every effort to ensure all fees are fair and reasonable. Charges are discussed
@@ -31,11 +59,11 @@ const PaymentOptions = () => {
                         ordering any ophthalmic materials.
                     </MDBCol>
 
-                    <MDBCol className="poImg col-12">
-                        <img className="po-img img-fluid" src={process.env.PUBLIC_URL + "/images/pamphletLNY.jpg"} alt="pamphletLNY" />
+                    <MDBCol className="poImgBox col-12">
+                        <img data-toggle="modal" data-target="#poImg" className="po-img img-fluid clickEnlarge" src={process.env.PUBLIC_URL + "/images/pamphletLNY.jpg"} alt="pamphletLNY" />
                     </MDBCol>
 
-                    <MDBCol className="poDesc col-12 col-lg-6 col-md-6 col-sm-6">
+                    <MDBCol className="poDesc col-12 col-lg-6 col-md-6">
                         <div className="podesc">
                             A vision insurance policy is not the same as medical health health insurance. Vision insurance
                             is a wellness benefit designed to provide routine eye care, prescription eye wear and other
@@ -51,7 +79,7 @@ const PaymentOptions = () => {
                         </div>
                     </MDBCol>
 
-                    <MDBCol className="poDesc col-12 col-lg-6 col-md-6 col-sm-6">
+                    <MDBCol className="poDesc col-12 col-lg-6 col-md-6">
                         <div className="podesc">
                             Medicare Part B is the only medical plan that we currently accept.
                         </div>
@@ -74,6 +102,19 @@ const PaymentOptions = () => {
 
                 </MDBRow>
             </section>
+
+            <div class="modal fade" id="poImg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </div>
+                        <div class="modal-body">
+                            <img className="modalImage img-fluid" src={process.env.PUBLIC_URL + "/images/pamphletLNY.jpg"} alt="pamphlet" />
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
     );

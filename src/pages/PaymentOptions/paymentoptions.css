@@ -54,23 +54,21 @@ payoptions {
 .poPage {
     display: flex;
     justify-content: center;
-    margin: 5em 0 6em 0;
+    margin: 6em 0 5em 0;
 }
 
-.poImg {
+.poImgBox {
     margin: 2em 0 1em 0;
 }
 
 .po-img {
+    max-height: 250px;
     width: 100%;
-    height: 250px;
     object-fit: cover;
-    object-position: 0 -11.5em;
 }
 
 .podesc {
-    font-size: 14px;
-    margin: 1.5em 0 0 0;
+    padding: 1em 0 1em 0;
 }
 
 .poLink {
@@ -83,25 +81,68 @@ payoptions {
     opacity: .7;
 }
 
-@media screen and (max-width: 1024px) {
-
-    .poPage {
-        margin: 10% 10% 10% 10%;
-    }
-
-    .po-img {
-        height: 250px;
-        object-fit: cover;
-        object-position: 0 -7.5em;
-    }
-
+.clickEnlarge {
+    cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
+body.modal-open {
+    height: 100vh;
+    overflow-y: hidden;
+    padding-right: 15px;
+}
 
-    .po-bg-box {
-        height: 25%;
-    }
+.modal-backdrop {
+    opacity: .8 !important;
+}
+
+.modal.fade .modal-dialog {
+    -webkit-transition: -webkit-transform .2s ease all !important;
+    -o-transition: -o-transform .2s ease all !important;
+    transition: transform .2s ease all !important;
+    -webkit-transform: translate(0, 0) !important;
+    -ms-transform: translate(0, 0) !important;
+    -o-transform: translate(0, 0) !important;
+    transform: translate(0, 0) !important;
+    transition-duration: 2 !important;
+    max-width: 120vmin;
+    padding-left: 1em;
+}
+
+.modal-content {
+    background: none !important;
+}
+
+.modal-body {
+    text-align: center;
+    padding: 0 !important;
+}
+
+.close {
+    position: fixed;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    color: white !important;
+    text-align: center;
+    border: 1px dotted white;
+    width: .85em;
+    height: .85em;
+    font-size: 2em !important;
+    z-index: 1;
+}
+
+.close span {
+    position: relative;
+    bottom: .25em;
+}
+
+.close:hover {
+    border: 1px dotted transparent !important;
+}
+
+@media screen and (max-width: 1024px) {}
+
+@media screen and (max-width: 768px) {
 
     potitlebox {
         margin: 3% 0 3% 3%;
@@ -111,32 +152,6 @@ payoptions {
         margin: 3% 0 3% 3%;
     }
 
-    .poPage {
-        margin: 10% 3% 5% 3%;
-    }
-
-    .poImg {
-        margin: 10% 0 10% 0;
-    }
-
-    .po-img {
-        height: 200px;
-        object-fit: cover;
-        object-position: 0 -5.5em;
-    }
-
-    .podesc {
-        margin: 0 0 7% 0;
-    }
-
 }
 
-@media screen and (max-width: 500px) {
-
-    .po-img {
-        height: 150px;
-        object-fit: cover;
-        object-position: 0 -3.5em;
-    }
-
-}
+@media screen and (max-width: 500px) {}
