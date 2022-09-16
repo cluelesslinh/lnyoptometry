@@ -1,7 +1,3 @@
-#myCarousel {
-    margin-bottom: 2em;
-}
-
 .carousel-item {
     height: 80vh;
 }
@@ -85,4 +81,8 @@
 
 #myCarousel:hover .galleryFooter {
     visibility: visible;
+}
+
+.btnContainer {
+    visibility: hidden;
 }
