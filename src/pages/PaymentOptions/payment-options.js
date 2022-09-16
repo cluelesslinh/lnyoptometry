@@ -103,13 +103,13 @@ const PaymentOptions = () => {
                 </MDBRow>
             </section>
 
-            <div class="modal fade" id="poImg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="close" data-dismiss="modal" aria-label="Close">
+            <div className="modal fade" id="poImg" tabIndex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div className="modal-dialog modal-dialog-centered" role="document">
+                    <div className="modal-content">
+                        <div className="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </div>
-                        <div class="modal-body">
+                        <div className="modal-body">
                             <img className="modalImage img-fluid" src={process.env.PUBLIC_URL + "/images/pamphletLNY.jpg"} alt="pamphlet" />
                         </div>
                     </div>

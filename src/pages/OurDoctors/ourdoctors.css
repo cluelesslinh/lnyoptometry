@@ -77,6 +77,65 @@ oddesc {
     font-size: 11px;
 }
 
+.clickEnlarge {
+    cursor: pointer;
+}
+
+body.modal-open {
+    height: 100vh;
+    overflow-y: hidden;
+    padding-right: 15px;
+}
+
+.modal-backdrop {
+    opacity: .8 !important;
+}
+
+.modal.fade .modal-dialog {
+    -webkit-transition: -webkit-transform .2s ease all !important;
+    -o-transition: -o-transform .2s ease all !important;
+    transition: transform .2s ease all !important;
+    -webkit-transform: translate(0, 0) !important;
+    -ms-transform: translate(0, 0) !important;
+    -o-transform: translate(0, 0) !important;
+    transform: translate(0, 0) !important;
+    transition-duration: 2 !important;
+    max-width: 120vmin;
+    padding-left: 1em;
+}
+
+.modal-content {
+    background: none !important;
+}
+
+.modal-body {
+    text-align: center;
+    padding: 0 !important;
+}
+
+.close {
+    position: fixed;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    color: white !important;
+    text-align: center;
+    border: 1px dotted white;
+    width: .85em;
+    height: .85em;
+    font-size: 2em !important;
+    z-index: 1;
+}
+
+.close span {
+    position: relative;
+    bottom: .25em;
+}
+
+.close:hover {
+    border: 1px dotted transparent !important;
+}
+
 @media screen and (max-width: 768px) {
 
     .od-bg-box {

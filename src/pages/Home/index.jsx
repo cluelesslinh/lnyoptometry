@@ -264,8 +264,8 @@ const Home = () => {
                             <LocDesc>1890 GARNET AVE. SAN DIEGO, CA 92109</LocDesc>
                             <LocDesc>(858) 274-3777</LocDesc>
                             <LocDesc>LNYoptometry@gmail.com</LocDesc>
-                            <locDesc><a href="https://www.google.com/maps/place/32%C2%B048'06.5%22N+117%C2%B014'09.8%22W/@32.8018039,-117.2535652,14"
-                                className="locationCoord" target="blank">32°48'06.5"N 117°14'09.8"W</a></locDesc>
+                            <LocDesc><a href="https://www.google.com/maps/place/32%C2%B048'06.5%22N+117%C2%B014'09.8%22W/@32.8018039,-117.2535652,14"
+                                className="locationCoord" target="blank">32°48'06.5"N 117°14'09.8"W</a></LocDesc>
                         </MDBCol>
                     </MDBRow>
                     <MDBRow className="LocRow col-xl-8 col-lg-12">
@@ -313,78 +313,78 @@ const Home = () => {
                 </ul>
             </div>
 
-            <div class="modal fade" id="mainMS" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="close" data-dismiss="modal" aria-label="Close">
+            <div className="modal fade" id="mainMS" tabIndex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div className="modal-dialog modal-dialog-centered" role="document">
+                    <div className="modal-content">
+                        <div className="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </div>
-                        <div class="modal-body">
+                        <div className="modal-body">
                             <img className="modalImage img-fluid" src={process.env.PUBLIC_URL + "/images/home-ms-main.jpg"} alt="Glasses-Showcase" />
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="modal fade" id="subMS1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="close" data-dismiss="modal" aria-label="Close">
+            <div className="modal fade" id="subMS1" tabIndex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div className="modal-dialog modal-dialog-centered" role="document">
+                    <div className="modal-content">
+                        <div className="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </div>
-                        <div class="modal-body">
+                        <div className="modal-body">
                             <img className="modalImage img-fluid" src={process.env.PUBLIC_URL + "/images/home-ms-1.jpg"} alt="LNYsign" />
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="modal fade" id="subMS2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="close" data-dismiss="modal" aria-label="Close">
+            <div className="modal fade" id="subMS2" tabIndex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div className="modal-dialog modal-dialog-centered" role="document">
+                    <div className="modal-content">
+                        <div className="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </div>
-                        <div class="modal-body">
+                        <div className="modal-body">
                             <img className="modalImage img-fluid" src={process.env.PUBLIC_URL + "/images/auto-refractor.jpg"} alt="oculars" />
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="modal fade" id="subMS3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="close" data-dismiss="modal" aria-label="Close">
+            <div className="modal fade" id="subMS3" tabIndex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div className="modal-dialog modal-dialog-centered" role="document">
+                    <div className="modal-content">
+                        <div className="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </div>
-                        <div class="modal-body">
+                        <div className="modal-body">
                             <img className="modalImage img-fluid" src={process.env.PUBLIC_URL + "/images/retina.jpg"} alt="retina" />
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="modal fade" id="locSub1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="close" data-dismiss="modal" aria-label="Close">
+            <div className="modal fade" id="locSub1" tabIndex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div className="modal-dialog modal-dialog-centered" role="document">
+                    <div className="modal-content">
+                        <div className="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </div>
-                        <div class="modal-body">
+                        <div className="modal-body">
                             <img className="modalImage img-fluid" src={process.env.PUBLIC_URL + "/images/home-location-1.jpg"} alt="oculars" />
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="modal fade" id="locSub2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="close" data-dismiss="modal" aria-label="Close">
+            <div className="modal fade" id="locSub2" tabIndex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div className="modal-dialog modal-dialog-centered" role="document">
+                    <div className="modal-content">
+                        <div className="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </div>
-                        <div class="modal-body">
+                        <div className="modal-body">
                             <img className="modalImage img-fluid" src={process.env.PUBLIC_URL + "/images/home-location-2.jpg"} alt="guest-table" />
                         </div>
                     </div>

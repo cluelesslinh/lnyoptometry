@@ -176,7 +176,7 @@ const Contact = () => {
                                             <input
                                                 type="email"
                                                 name="email"
-                                                class="form-control"
+                                                className="form-control"
                                                 id="email"
                                                 required
                                             />

@@ -3,7 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import ScrollButton from './components/ScrollButton';
+import { Link } from 'react-scroll';
+import { IoChevronUp } from 'react-icons/io5';
 import { BrowserRouter as Router, Routes, Route }
   from 'react-router-dom';
 import Home from './pages/Home';
@@ -27,7 +28,9 @@ function App() {
         <Route path='/gallery' element={<Gallery />} />
         <Route path='Reviews' element={<Reviews />} />
       </Routes>
-      <ScrollButton />
+      <div className="btnContainer">
+        <Link className="topIconBtn" spy to="navbar"><IoChevronUp /></Link>
+      </div>
       <Footer />
     </Router>
   );

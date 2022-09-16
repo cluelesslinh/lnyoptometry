@@ -1,5 +1,5 @@
 import React from 'react';
-import ScrollButton from './ScrollButton';
+import { Link } from 'react-scroll';
 import {
     MDBFooter,
     MDBContainer,
@@ -12,7 +12,9 @@ import './footer.css';
 const LNYfooter = () => {
     return (
         <MDBFooter className="footerLNY text-white">
-            <ScrollButton />
+            <div className="btnContainer">
+                <Link className="topBtn" spy to="navbar"><span className="btnText">TOP</span></Link>
+            </div>
             < MDBContainer fluid className="footerContainer">
                 <MDBRow>
                     <MDBCol className="footerDescCol col-12 col-sm-5 col-md-6 col-lg-6">
