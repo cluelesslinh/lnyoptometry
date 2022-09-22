@@ -39,14 +39,14 @@ const PaymentOptions = () => {
                 <Parallax className="po-bg-box" strength={700}>
                     <Background>
                         <img className="po-bg-img" src={process.env.PUBLIC_URL + "/images/cellphoneLNY.jpg"} alt="cellphoneLNY" /></Background>
-                    <potitlebox>
-                        <potitle>PAYMENT OPTIONS</potitle>
-                    </potitlebox>
-                    <podescbox>
-                        <payoptions>Debit and Credit Cards, HSA and FSA, VSP, Davis Vision, FEP Blue, MES Vision,
+                    <div className="poTitleBox">
+                        <div className="poTitle">PAYMENT OPTIONS</div>
+                    </div>
+                    <div className="poDescBox">
+                        <div className="payOptions">Debit and Credit Cards, HSA and FSA, VSP, Davis Vision, FEP Blue, MES Vision,
                             EyeMed, Blueview, Tricare, and Medicare.
-                        </payoptions>
-                    </podescbox>
+                        </div>
+                    </div>
                 </Parallax>
             </section>
 

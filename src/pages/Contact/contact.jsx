@@ -53,15 +53,15 @@ const Contact = () => {
                 <Parallax className="contact-bg-box" strength={700}>
                     <Background>
                         <img className="contact-bg-img" src={process.env.PUBLIC_URL + "/images/office-view.jpg"} alt="office-view" /></Background>
-                    <contacttitlebox>
-                        <contacttitle>LOCATION & CONTACT INFO</contacttitle>
-                    </contacttitlebox>
-                    <contactdescbox>
-                        <location>Eye Exams, Contact Lenses, and Glasses in Pacific Beach, San Diego</location>
-                        <location>1890 Garnet Ave. San Diego, CA 92109</location>
-                        <location>(858) 274-3777</location>
-                        <location>Office hours: By appointment only due to COVID-19</location>
-                    </contactdescbox>
+                    <div className="contactTitleBox">
+                        <div className="contactTitle">LOCATION & CONTACT INFO</div>
+                    </div>
+                    <div className="contactDescBox">
+                        <div className="locationDesc">Eye Exams, Contact Lenses, and Glasses in Pacific Beach, San Diego</div>
+                        <div className="locationDesc">1890 Garnet Ave. San Diego, CA 92109</div>
+                        <div className="locationDesc">(858) 274-3777</div>
+                        <div className="locationDesc">Office hours: By appointment only due to COVID-19</div>
+                    </div>
                 </Parallax>
             </section>
 
@@ -153,7 +153,7 @@ const Contact = () => {
                                                 id="first_name"
                                                 required
                                             />
-                                            <label className="nameLabel" for="first_name">First Name</label>
+                                            <label className="nameLabel" htmlFor="first_name">First Name</label>
                                         </div>
 
                                         <div className="form-group col-6">
@@ -164,7 +164,7 @@ const Contact = () => {
                                                 id="last_name"
                                                 required
                                             />
-                                            <label className="nameLabel" for="last_name">Last Name</label>
+                                            <label className="nameLabel" htmlFor="last_name">Last Name</label>
                                         </div>
 
                                     </div>
@@ -172,7 +172,7 @@ const Contact = () => {
                                     <div className="formRow">
 
                                         <div className="form-group col-6">
-                                            <label for="email">Email Address *</label>
+                                            <label htmlFor="email">Email Address *</label>
                                             <input
                                                 type="email"
                                                 name="email"
@@ -183,7 +183,7 @@ const Contact = () => {
                                         </div>
 
                                         <div className="form-group col-6">
-                                            <label for="phone_number">Phone Number *</label>
+                                            <label htmlFor="phone_number">Phone Number *</label>
                                             <input
                                                 type="tel"
                                                 name="phone_number"
@@ -196,7 +196,7 @@ const Contact = () => {
                                     </div>
 
                                     <div className="form-group col-12">
-                                        <label for="subject">Subject *</label>
+                                        <label htmlFor="subject">Subject *</label>
                                         <input
                                             type="tel"
                                             name="subject"
@@ -207,7 +207,7 @@ const Contact = () => {
                                     </div>
 
                                     <div className="form-group col-12">
-                                        <label for="message">Message *</label>
+                                        <label htmlFor="message">Message *</label>
                                         <textarea
                                             type="text"
                                             name="message"

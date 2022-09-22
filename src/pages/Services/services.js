@@ -8,15 +8,15 @@ const Services = () => {
         <div>
 
             <section className="servicesBG">
-                <Parallax className="services-bg-box" strength={750}>
+                <Parallax className="services-bg-box" strength={600}>
                     <Background>
                         <img className="services-bg-img" src={process.env.PUBLIC_URL + "/images/auto-refractor.jpg"} alt="auto-refractor" /></Background>
-                    <servicestitlebox>
-                        <servicestitle>SERVICES</servicestitle>
-                    </servicestitlebox>
-                    <servicesdescbox>
-                        <servicesdesc>Eye Exams, Contact Lenses, and Glasses in Pacific Beach, San Diego</servicesdesc>
-                    </servicesdescbox>
+                    <div className="servicesTitleBox">
+                        <div className="servicesTitle">SERVICES</div>
+                    </div>
+                    <div className="servicesDescBox">
+                        <div className="serviceDesc">Eye Exams, Contact Lenses, and Glasses in Pacific Beach, San Diego</div>
+                    </div>
                 </Parallax>
             </section>
 

@@ -107,13 +107,14 @@ span.sideLOC {
 }
 
 .home-top-bg {
+    position: fixed;
     height: 700px;
 }
 
 .home-topimg {
     min-width: 100vmax;
     min-height: 100vh;
-    object-fit: cover;
+    object-fit: contain;
     object-position: 0 -9em;
 }
 

@@ -12,7 +12,7 @@
     object-position: 0 -19em;
 }
 
-contacttitlebox {
+.contactTitleBox {
     background-color: white;
     width: 75%;
     max-width: 725px;
@@ -24,14 +24,14 @@ contacttitlebox {
     flex-wrap: wrap;
 }
 
-contacttitle {
+.contactTitle {
     font-size: 2.25em;
     letter-spacing: .175em;
     margin: 3% 5% 3% 5%;
     line-height: 1.2em;
 }
 
-contactdescbox {
+.contactDescBox {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -44,7 +44,7 @@ contactdescbox {
     padding: 1em 0 1em 0;
 }
 
-location {
+.locationDesc {
     font-weight: 600;
     font-size: 1em;
     letter-spacing: .075em;
@@ -150,11 +150,11 @@ input:focus {
 
 @media screen and (max-width: 1024px) {
 
-    contacttitlebox {
+    .contactTitleBox {
         margin: 5% 5% 5% 5%;
     }
 
-    contactdescbox {
+    .contactDescBox {
         margin: 5% 5% 5% 5%;
     }
 

@@ -14,8 +14,6 @@ const Home = () => {
 
     $(window).scroll(function () {
 
-        var scroll = $(window).scrollTop();
-
         $('.dot').each(function () {
             var elementPositionTop = parseFloat($(this).offset().top) + (parseFloat($(this).height() / 2));
 
@@ -30,8 +28,6 @@ const Home = () => {
     });
 
     $(window).scroll(function () {
-
-        var scroll = $(window).scrollTop();
 
         $('.dropItem').each(function () {
             var elementPositionTop = parseFloat($(this).offset().top) + (parseFloat($(this).height() / 2));

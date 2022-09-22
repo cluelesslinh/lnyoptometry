@@ -12,7 +12,7 @@
     object-position: 0 -19em;
 }
 
-potitlebox {
+.poTitleBox {
     background-color: white;
     width: 60%;
     max-width: 500px;
@@ -24,14 +24,14 @@ potitlebox {
     flex-wrap: wrap;
 }
 
-potitle {
+.poTitle {
     font-size: 2.25em;
     letter-spacing: .175em;
     margin: 3% 5% 3% 5%;
     line-height: 1.2em;
 }
 
-podescbox {
+.poDescBox {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -44,7 +44,7 @@ podescbox {
     padding: 1em 0 1em 0;
 }
 
-payoptions {
+.payOptions {
     font-weight: 600;
     font-size: 1em;
     letter-spacing: .075em;
