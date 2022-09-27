@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-scroll';
+import { IoChevronUp } from 'react-icons/io5';
 import { MDBRow, MDBCol, } from 'mdb-react-ui-kit';
 import "./reviews.css";
 
@@ -408,6 +410,15 @@ const Reviews = () => {
                     </div>
                 </MDBCol>
             </MDBRow>
+
+            <div className="btnContainer">
+                <Link className="topIconBtn" spy to="navbar"><IoChevronUp /></Link>
+            </div>
+            <div className="btnBg">
+                <div className="btnContainer">
+                    <Link className="topBtn" spy to="navbar"><span className="btnText">TOP</span></Link>
+                </div>
+            </div>
 
         </div>
 

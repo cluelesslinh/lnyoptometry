@@ -1,10 +1,10 @@
 .carousel-item {
-    height: 80vh;
+    height: 650px;
 }
 
 .gallery-img {
     width: 100vw;
-    height: 75vh;
+    height: 600px;
     object-fit: cover;
 }
 
@@ -14,7 +14,7 @@
     width: 10px;
     height: 10px;
     bottom: -25px;
-    margin: 0 .75em 0 .75em !important;
+    margin: 0 .75em 1.5em .75em !important;
 }
 
 .carousel .carousel-indicators li.active {
@@ -23,7 +23,7 @@
 
 .prevBtn {
     width: 50vw !important;
-    height: 75vh;
+    height: 600px;
     z-index: 3;
 }
 
@@ -38,7 +38,7 @@
 
 .nextBtn {
     width: 50vw !important;
-    height: 75vh;
+    height: 600px;
     z-index: 3;
 }
 
@@ -57,10 +57,10 @@
 
 .galleryFooter {
     background: rgba(0, 0, 0, .7);
-    min-height: 135px;
+    height: 135px;
     width: 100vw;
     position: absolute;
-    bottom: 5vh;
+    bottom: 50px;
     z-index: 2;
 }
 
@@ -81,8 +81,4 @@
 
 #myCarousel:hover .galleryFooter {
     visibility: visible;
-}
-
-.btnContainer {
-    visibility: hidden;
 }

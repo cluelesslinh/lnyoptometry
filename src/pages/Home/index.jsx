@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-scroll';
+import { IoChevronUp } from 'react-icons/io5';
 import $ from 'jquery';
 import { Parallax, Background } from 'react-parallax';
 import { MDBRow, MDBCol, } from 'mdb-react-ui-kit';
@@ -384,6 +385,15 @@ const Home = () => {
                             <img className="modalImage img-fluid" src={process.env.PUBLIC_URL + "/images/home-location-2.jpg"} alt="guest-table" />
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <div className="btnContainer">
+                <Link className="topIconBtn" spy to="navbar"><IoChevronUp /></Link>
+            </div>
+            <div className="btnBg">
+                <div className="btnContainer">
+                    <Link className="topBtn" spy to="navbar"><span className="btnText">TOP</span></Link>
                 </div>
             </div>
 
