@@ -12,7 +12,7 @@
     object-position: 0 -40vh;
 }
 
-odtitlebox {
+.odTitleBox {
     background-color: white;
     width: 60%;
     width: 375px;
@@ -23,14 +23,14 @@ odtitlebox {
     flex-wrap: wrap;
 }
 
-odtitle {
+.odtitle {
     font-size: 2.25em;
     letter-spacing: .175em;
     margin: 3% 5% 3% 5%;
     line-height: 1.2em;
 }
 
-oddescbox {
+.oddescbox {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -40,14 +40,14 @@ oddescbox {
     max-width: 650px;
     min-width: 425px;
     margin: 0 0 0 5rem;
-    padding: 1em 0 1em 0;
+    padding: 0 0 1em 0;
 }
 
-oddesc {
+.oddesc {
     font-weight: 600;
     font-size: 1em;
     letter-spacing: .075em;
-    padding: .25rem 5% .25rem 5%;
+    padding: 0rem 5% .25rem 5%;
 }
 
 .odPage {

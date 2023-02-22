@@ -39,14 +39,14 @@ const OurDoctors = () => {
                 <Parallax className="od-bg-box" strength={750}>
                     <Background>
                         <img className="od-bg-img" src={process.env.PUBLIC_URL + "/images/prada-display.jpg"} alt="prada-display" /></Background>
-                    <odtitlebox>
-                        <odtitle>OUR DOCTORS</odtitle>
-                    </odtitlebox>
-                    <oddescbox>
-                        <oddesc>
+                    <div className="odTitleBox">
+                        <div className="odtitle">OUR DOCTORS</div>
+                    </div>
+                    <div className="oddescbox">
+                        <div className="oddesc">
                             Eye Exams, Contact Lenses, and Glasses in Pacific Beach, San Diego.
-                        </oddesc>
-                    </oddescbox>
+                        </div>
+                    </div>
                 </Parallax>
             </section>
 
